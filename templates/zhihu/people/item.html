@@ -1,0 +1,19 @@
+<h3 class="title_h3"><a href="{{ list_item.question.url |replace("questions","question")|replace("api","www") }}"
+       class="title"><b>{{ list_item.question.title }}</b></a></h3>
+<div class="main-content">
+    <div class="row">
+        {% if list_item.thumbnail %}
+            <div class="col-sm-4 hidden-xs">
+                <img class="item" src="{{ list_item.thumbnail|replace("200x112", "400x224") }}">
+            </div>
+        {% endif %}
+        <div class="{% if list_item.thumbnail %}{{ "col-sm-8" }}{% else %}{{ "col-sm-12" }}{% endif %}">
+            <div class="text-content">{{ list_item.excerpt|safe }}<a href="#">阅读全文</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="detail-content">
+    {{ list_item.content |clear_zhihu_answer|safe }}
+</div>
+{% include 'zhihu/share/bar.html' %}

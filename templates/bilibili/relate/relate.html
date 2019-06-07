@@ -1,0 +1,33 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/bilibili/relate/relate.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/bilibili/relate/relate.js"></script>
+{% endblock %}
+{% block body %}
+    {% if not resume.is_root%}
+    <a href="/module/bilibili/view/BilibiliRelateView/back_view?id={{ resume.parent_pointer }}&root_id={{ root_id }}" class="btn btn-danger btn-circle btn-lg"  style="right: 10px;bottom: 15px;position: fixed" ><span class="glyphicon glyphicon-menu-left" style="margin-top: 4.5px;margin-left: -0.5px"></span></a>
+    {% endif %}
+    <ul class="list-group relates_list">
+        {% for item in resume.relates %}
+            <li class="list-group-item" data-id="{{ item.aid }}" id="{{ item.aid }}" style="padding: 3px" onclick="window.location.href='/module/bilibili/view/BilibiliRelateView/relate_view?id={{ item.aid }}&parent_id={{ resume.aid }}&root_id={{ root_id }}'">
+                <a class="row" href="https://www.bilibili.com/video/av{{ item.aid }}" onclick="return false" style="margin: 0">
+                <div class="col-md-3 col-xs-5">
+                    <img src="{{ item.pic }}" class="img-rounded img-responsive" style="padding: 0">
+                    <span style="position: absolute;z-index: 999;color: whitesmoke;background-color:dimgrey;margin-top: -20px">{{ (item.duration / 60) | int}}:{{ (item.duration % 60) }}</span>
+                </div>
+                    <div class="col-md-9 col-xs-7" style="padding-left: 0">
+                        <h4>{{ item.title }}</h4>
+                        <p>{{ item.owner.name }}</p>
+                        <div>
+                            <span>点击：{% if item.stat.view > 10000 %}{{ (item.stat.view / 10000)|int }} 万{% else %}{{ item.stat.view }}{% endif %}</span>
+                            <span> 弹幕：{{ item.stat.danmaku }}</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div id="root_flag" data-root_id="{{ root_id }}" data-id="{{ resume.aid }}" data-history="{{ resume.read_history }}"></div>
+{% endblock %}

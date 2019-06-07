@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/zhihu/search/search.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/zhihu/search/search.js"></script>
+{% endblock %}
+{% block body %}
+    <div class="col-sm-2"></div>
+    <div class="col-sm-7 zhihu-answers">
+
+        <ul class="list-group list">
+            {% include 'zhihu/search/search_list_content.html' %}
+        </ul>
+    </div>
+    <div class="col-sm-3">
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+.chapter-comment-avatar {
+  width: 79 px;
+  height: 79 px;
+  position: absolute;
+  margin-top: 5px;
+}
+.chapter-comment-info {
+  margin-left: 91px;
+}
+.chapter-reply-avatar {
+  width: 50 px;
+  height: 50 px;
+  position: absolute;
+  margin-top: 5px;
+}
+.chapter-reply-info {
+  margin-left: 62px;
+}
+.wuxiaworld-comment {
+  margin-bottom: 20px;
+}

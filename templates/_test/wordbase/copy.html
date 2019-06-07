@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        div {
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        #word_base{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+    <script type="text/javascript" src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript">
+ $(function () {
+ //插入图标备用
+ $('<img src="http://simg.sinajs.cn/blog7style/images/common/share.gif" id="shareit" style="position:absolute;z-index:1000;display:none"/>').appendTo($("body"));
+ //选择文字函数
+ function selctiTxt() {
+ if (document.selection) {//IE
+ return document.selection.createRange().text;
+ } else {//标准
+     var selection = window.getSelection();
+{#     console.log($(selection.getRangeAt(0).commonAncestorContainer).parent().parent().attr('class'));#}
+
+{#     var context = $(selection.getRangeAt(0).commonAncestorContainer);#}
+{#     console.log(context.html());#}
+{#     console.log(context.hasClass('container'));#}
+{#     console.log(context.parent().parent().hasClass('test'));#}
+
+     var context = $(selection.getRangeAt(0).commonAncestorContainer);
+     while(!context.hasClass('container')){
+         context = context.parent()
+     }
+     console.log(context.html());
+{#     console.log($(selection.getRangeAt(0).commonAncestorContainer).parent().parent().html());#}
+{#     console.log(selection.getRangeAt(0).commonAncestorContainer.parentElement.parentElement);#}
+{#     console.log($(selection.getRangeAt(0).commonAncestorContainer.parentElement.parentElement));#}
+ return selection.toString();
+ }
+ }
+ $('#word_base').click(function () {
+     console.log(selctiTxt());
+ });
+{# setInterval(function () {#}
+{#     if (selctiTxt()) {#}
+{#         alert(selctiTxt())#}
+{#     }#}
+{# },1000);#}
+ //分享到新浪微博
+ $("#shareit").click(function (e) {
+ var e = $.event.fix(e);
+ window.open("http://v.t.sina.com.cn/share/share.php?searchPic=false&title=" + selctiTxt() + "&url=" + window.location.href);
+ setTimeout(function () {
+ $("#shareit").hide();
+ }, 200);
+ e.preventDefault();
+ return false;
+ });
+ //选择问题显示分享图标
+ $(document).bind("mouseup", function (e) {
+ var e = $.event.fix(e);
+ var iX = e.pageX,
+ iY = e.pageY;
+ if (selctiTxt().length > 0) {
+ setTimeout(function () {
+ $("#shareit").css({
+ "left": iX + "px",
+ "top": iY + "px"
+ }).fadeIn();
+ }, 200);
+ } else {
+ $("#shareit").hide();
+ }
+ });
+ //点击别处隐藏
+ $(document).click(function () {
+ $("#shareit").hide();
+ })
+ });
+ 
+    </script>
+</head>
+<body>
+<div class="container">
+    <div>
+    <div class="testttt test">
+        <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+        <button id="tttest">collection</button>
+    </div>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+    <p>以前用jQuery写过一个，今天练习用原生的js写了一个，一方面练手另一方面是复习了一些知识点，放上记录下！
+        知识点主要是charCodeAt()以及oninput和onpropertychange ，其余的都是大家比较熟悉的知识了。</p>
+    <p>
+        charCodeAt()返回对应的字符unicode编码，oninput和onpropertychange是用来做到你在文本域中点击右键粘帖的时候触发事件的，因为onkeyup和onchange不能触发右键的粘帖。其中的255这个数字你可以比较的不明白，你可以自己试试除了汉字外的编码都是多大，我大致试了下，其实126也是可以的，好像我没有找到比126的大的非汉字的字符，当然255更好些，汉字都比较的大你可以自己动手试试！
+        另外由于自己太懒布局就从简了^_^</p>
+</div>
+        <button id="word_base">button</button>
+</div>
+</body>
+</html>

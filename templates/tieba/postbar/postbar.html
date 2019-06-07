@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/tieba/postbar/postbar.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/tieba/postbar/postbar.js"></script>
+{% endblock %}
+{% block body %}
+    <div class="col-sm-1"></div>
+    <div class="col-sm-8">
+        <ul class="list-group list">
+            {% include 'tieba/postbar/postbar_list_content.html' %}
+        </ul>
+    </div>
+    <div class="col-sm-3">
+    </div>
+    <a href="#" id="go_to_mark" class="btn btn-primary btn-circle btn-lg"  style="right: 10px;bottom: 20px;position: fixed" ><span class="glyphicon glyphicon-tags" style="margin-top: 4.5px;margin-left: -0.5px"></span></a>
+{% endblock %}

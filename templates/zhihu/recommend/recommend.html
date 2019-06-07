@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/zhihu/recommend/recommend.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/zhihu/recommend/recommend.js"></script>
+{% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <ul class="list-group list">
+                {% include 'zhihu/recommend/recommend_list_content.html' %}
+            </ul>
+        </div>
+    </div>
+    <button onclick="javascript: location.reload(true);" class="btn btn-primary btn-circle btn-lg visible-xs-block" style="position: fixed;bottom: 50px;left: 20px;z-index: 100">F</button>
+
+{% endblock %}

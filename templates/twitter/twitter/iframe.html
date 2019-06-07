@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+{% block css %}
+{% endblock %}
+{% block js %}
+    <script src="/static/module/twitter/twitter/iframe.js"></script>
+{% endblock %}
+{% block body %}
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+
+            <ul class="list-group list">
+                {{ iframe |safe }}
+            </ul>
+        </div>
+        <div class="col-sm-2">
+        </div>
+{% endblock %}

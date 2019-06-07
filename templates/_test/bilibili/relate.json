@@ -1,0 +1,1357 @@
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": {
+    "aid": 21989705,
+    "videos": 1,
+    "tid": 21,
+    "tname": "日常",
+    "copyright": 1,
+    "pic": "http://i2.hdslb.com/bfs/archive/b086c01f664face98b55f4fcdb2c4c39db633db6.jpg",
+    "title": "英国女孩对中国生活的预期VS现实",
+    "pubdate": 1523613646,
+    "ctime": 1523613650,
+    "desc": "Here I'll talk about my Expectation and Reality of China.",
+    "state": 0,
+    "attribute": 16768,
+    "duration": 436,
+    "rights": {
+      "bp": 0,
+      "elec": 1,
+      "download": 1,
+      "movie": 0,
+      "pay": 0,
+      "hd5": 1,
+      "no_reprint": 1
+    },
+    "owner": {
+      "mid": 310797729,
+      "name": "艾爱玛",
+      "face": "http://i1.hdslb.com/bfs/face/71d105c6972c4ebe494bee8f91c2fb4a46cf37d2.jpg"
+    },
+    "stat": {
+      "aid": 21989705,
+      "view": 31029,
+      "danmaku": 488,
+      "reply": 220,
+      "favorite": 193,
+      "coin": 562,
+      "share": 21,
+      "now_rank": 0,
+      "his_rank": 0,
+      "like": 487
+    },
+    "dynamic": "Here I'll talk about my Expectation and Reality of China.",
+    "pages": [
+      {
+        "cid": 36332886,
+        "page": 1,
+        "from": "vupload",
+        "part": "",
+        "duration": 436,
+        "vid": "",
+        "weblink": "",
+        "metas": [
+          {
+            "quality": 15,
+            "format": "",
+            "size": 27816
+          },
+          {
+            "quality": 16,
+            "format": "",
+            "size": 27816
+          },
+          {
+            "quality": 48,
+            "format": "",
+            "size": 79613
+          },
+          {
+            "quality": 74,
+            "format": "",
+            "size": 191360
+          },
+          {
+            "quality": 112,
+            "format": "",
+            "size": 371210
+          },
+          {
+            "quality": 116,
+            "format": "",
+            "size": 371210
+          },
+          {
+            "quality": 32,
+            "format": "",
+            "size": 61628
+          },
+          {
+            "quality": 64,
+            "format": "",
+            "size": 131410
+          },
+          {
+            "quality": 80,
+            "format": "",
+            "size": 191360
+          }
+        ],
+        "dmlink": "http://comment.bilibili.com/36332886.xml",
+        "dm": {
+          "closed": false,
+          "real_name": false
+        }
+      }
+    ],
+    "owner_ext": {
+      "official_verify": {
+        "type": -1,
+        "desc": ""
+      },
+      "vip": {
+        "vipType": 0,
+        "vipDueDate": 0,
+        "dueRemark": "",
+        "accessStatus": 0,
+        "vipStatus": 0,
+        "vipStatusWarn": ""
+      },
+      "assists": null,
+      "fans": 5275,
+      "archives": 13
+    },
+    "req_user": {
+      "attention": -999,
+      "favorite": 0,
+      "like": 0
+    },
+    "tag": [
+      {
+        "tag_id": 1742,
+        "tag_name": "生活",
+        "cover": "",
+        "likes": 0,
+        "hates": 0,
+        "liked": 0,
+        "hated": 0,
+        "attribute": 0
+      },
+      {
+        "tag_id": 2848,
+        "tag_name": "日常",
+        "cover": "http://i0.hdslb.com/bfs/tag/797b65726c0a51b20502539ef5f9c6e3b19d062e.jpg",
+        "likes": 0,
+        "hates": 0,
+        "liked": 0,
+        "hated": 0,
+        "attribute": 0
+      },
+      {
+        "tag_id": 3504,
+        "tag_name": "英国",
+        "cover": "",
+        "likes": 0,
+        "hates": 0,
+        "liked": 0,
+        "hated": 0,
+        "attribute": 0
+      },
+      {
+        "tag_id": 6888552,
+        "tag_name": "现实反应",
+        "cover": "",
+        "likes": 0,
+        "hates": 0,
+        "liked": 0,
+        "hated": 0,
+        "attribute": 0
+      }
+    ],
+    "elec": {
+      "show": true,
+      "total": 9,
+      "count": 9,
+      "list": [
+        {
+          "pay_mid": 51583004,
+          "rank": 1,
+          "uname": "lzq01",
+          "avatar": "http://static.hdslb.com/images/member/noface.gif"
+        },
+        {
+          "pay_mid": 13812789,
+          "rank": 2,
+          "uname": "囧对囧",
+          "avatar": "http://i2.hdslb.com/bfs/face/c64f531ce4f137889daab54600e9cce87268b79a.jpg"
+        },
+        {
+          "pay_mid": 41717680,
+          "rank": 3,
+          "uname": "绿娃正牌老公",
+          "avatar": "http://i2.hdslb.com/bfs/face/a3ac66671cb734bfe975e22cebec50852ccb2d8c.jpg"
+        },
+        {
+          "pay_mid": 9118703,
+          "rank": 4,
+          "uname": "我就23333333啊",
+          "avatar": "http://i1.hdslb.com/bfs/face/a9d0d9ce2012c1312476cc0acd4a2b29e1ccbcb1.jpg"
+        },
+        {
+          "pay_mid": 119838132,
+          "rank": 5,
+          "uname": "都是蛇皮怪",
+          "avatar": "http://static.hdslb.com/images/member/noface.gif"
+        },
+        {
+          "pay_mid": 289352478,
+          "rank": 6,
+          "uname": "晓来谁染霜林",
+          "avatar": "http://i2.hdslb.com/bfs/face/461a7e85e065565ed23a96fbf1cb51264683be88.jpg"
+        },
+        {
+          "pay_mid": 125341049,
+          "rank": 7,
+          "uname": "海盐玫瑰",
+          "avatar": "http://i0.hdslb.com/bfs/face/9f23d9421398185da856fac32aa7f77897ef91fb.jpg"
+        },
+        {
+          "pay_mid": 18015396,
+          "rank": 8,
+          "uname": "小华0001",
+          "avatar": "http://i0.hdslb.com/bfs/face/79ff385b52c263cf1249f35fb6e01ddda454284a.jpg"
+        },
+        {
+          "pay_mid": 26894197,
+          "rank": 9,
+          "uname": "贾叔叔",
+          "avatar": "http://i0.hdslb.com/bfs/face/47ceefdf4668a63ca05ec723585d5b0755d7cde8.jpg"
+        }
+      ],
+      "elec_set": {
+        "elec_theme": 0,
+        "rmb_rate": 10.00,
+        "integrity_rate": 10.00,
+        "round_mode": 0,
+        "elec_list": [
+          {
+            "title": "20电池",
+            "elec_num": 20,
+            "is_customize": 0
+          },
+          {
+            "title": "60电池",
+            "elec_num": 60,
+            "is_customize": 0
+          },
+          {
+            "title": "450电池",
+            "elec_num": 450,
+            "is_customize": 0
+          },
+          {
+            "title": "880电池",
+            "elec_num": 880,
+            "is_customize": 0
+          },
+          {
+            "title": "自定义",
+            "elec_num": 0,
+            "is_customize": 1,
+            "min_elec": 20,
+            "max_elec": 99999
+          }
+        ]
+      }
+    },
+    "relates": [
+      {
+        "aid": 22034573,
+        "pic": "http://i1.hdslb.com/bfs/archive/36bc3e2994f86e2de6e416141be04ca86f3609e9.jpg",
+        "title": "中國真的好安全！感覺好幸福！北京街頭採訪：中國到底安不安全？看看那些外國人是怎麼說的",
+        "owner": {
+          "mid": 295241596,
+          "name": "大國那兔份子",
+          "face": "http://i1.hdslb.com/bfs/face/70a1c3651afeb8472ca595ab091036e617018bac.jpg"
+        },
+        "stat": {
+          "aid": 22034573,
+          "view": 13373,
+          "danmaku": 47,
+          "reply": 92,
+          "favorite": 31,
+          "coin": 7,
+          "share": 2,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 22
+        },
+        "duration": 139,
+        "goto": "av",
+        "param": "22034573",
+        "uri": "bilibili://video/22034573",
+        "ad_index": 1,
+        "src_id": 2031,
+        "request_id": "1524995585456q172a22a55a126q541",
+        "is_ad_loc": true,
+        "client_ip": "220.167.48.6",
+        "card_index": 1
+      },
+      {
+        "aid": 22536363,
+        "pic": "http://i1.hdslb.com/bfs/archive/469a759836112d54521d5db6a26c50502b1f0765.jpg",
+        "title": "老外准备用重庆小面折磨朋友, 没想到外国妹子连碗都差点吃下去了",
+        "owner": {
+          "mid": 186308899,
+          "name": "瞎搬运",
+          "face": "http://i0.hdslb.com/bfs/face/b6111b191cc429529ec7ea4649cdeef0a6b1a71c.jpg"
+        },
+        "stat": {
+          "aid": 22536363,
+          "view": 77814,
+          "danmaku": 330,
+          "reply": 156,
+          "favorite": 73,
+          "coin": 56,
+          "share": 8,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 86
+        },
+        "duration": 120,
+        "goto": "av",
+        "param": "22536363",
+        "uri": "bilibili://video/22536363"
+      },
+      {
+        "aid": 5104701,
+        "pic": "http://i1.hdslb.com/bfs/archive/4e1505f82e7873fdf65af923106c7ee0a8b438d5.jpg",
+        "title": "老外对中国绿卡知多少（好晕啊）",
+        "owner": {
+          "mid": 6767445,
+          "name": "女神是高圆圆",
+          "face": "http://i2.hdslb.com/bfs/face/a2458797a9c0e41104ed2e5b83d99f8da9892446.jpg"
+        },
+        "stat": {
+          "aid": 5104701,
+          "view": 77734,
+          "danmaku": 192,
+          "reply": 477,
+          "favorite": 246,
+          "coin": 9,
+          "share": 9,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 12
+        },
+        "duration": 138,
+        "goto": "av",
+        "param": "5104701",
+        "uri": "bilibili://video/5104701",
+        "ad_index": 2,
+        "src_id": 2334,
+        "request_id": "1524995585456q172a22a55a126q541",
+        "is_ad_loc": true,
+        "client_ip": "220.167.48.6",
+        "card_index": 3
+      },
+      {
+        "aid": 22563392,
+        "pic": "http://i2.hdslb.com/bfs/archive/24e9734e0731fdf0a7b87a09233e5a2fc2ad9cbb.jpg",
+        "title": "【外国评论】中国禁止进口洋垃圾 印度躺枪 外国网友脑洞真大",
+        "owner": {
+          "mid": 306198844,
+          "name": "超级搬运工",
+          "face": "http://i2.hdslb.com/bfs/face/84722dae8c33b2276b9a6794caa9fc91d415f64a.jpg"
+        },
+        "stat": {
+          "aid": 22563392,
+          "view": 28719,
+          "danmaku": 85,
+          "reply": 503,
+          "favorite": 57,
+          "coin": 13,
+          "share": 4,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 52
+        },
+        "duration": 143,
+        "goto": "av",
+        "param": "22563392",
+        "uri": "bilibili://video/22563392"
+      },
+      {
+        "aid": 22262479,
+        "pic": "http://i2.hdslb.com/bfs/archive/158d792e1c31215116929beab7ea54d9da5ece53.jpg",
+        "title": "中国小伙娶了【埃及小姐姐】之后：哈哈 我可以娶四个老婆了吧",
+        "owner": {
+          "mid": 22500342,
+          "name": "留学的真相",
+          "face": "http://i2.hdslb.com/bfs/face/7af19e342cb560870733804a94e46a45a1d1e771.jpg"
+        },
+        "stat": {
+          "aid": 22262479,
+          "view": 72672,
+          "danmaku": 522,
+          "reply": 363,
+          "favorite": 304,
+          "coin": 424,
+          "share": 40,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 431
+        },
+        "duration": 328,
+        "goto": "av",
+        "param": "22262479",
+        "uri": "bilibili://video/22262479"
+      },
+      {
+        "aid": 7548368,
+        "pic": "http://i0.hdslb.com/bfs/archive/bf1d5c2b139b2e1cad140213f5fdb056ca33fb77.jpg",
+        "title": "中国高考数学题 惊呆外国学者",
+        "owner": {
+          "mid": 25244163,
+          "name": "低头看见容嬷嬷233",
+          "face": "http://i0.hdslb.com/bfs/face/c9e27b9af20d6265bae84076f50a0f21e8d306c1.jpg"
+        },
+        "stat": {
+          "aid": 7548368,
+          "view": 600702,
+          "danmaku": 2729,
+          "reply": 1495,
+          "favorite": 2053,
+          "coin": 58,
+          "share": 223,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 260
+        },
+        "duration": 83,
+        "goto": "av",
+        "param": "7548368",
+        "uri": "bilibili://video/7548368"
+      },
+      {
+        "aid": 13029236,
+        "pic": "http://i0.hdslb.com/bfs/archive/6fa50bc0500445253c0a5b421e7e76f2e8ef1049.jpg",
+        "title": "外国人当中文老师你见过吗？美国学生学中文",
+        "owner": {
+          "mid": 35432034,
+          "name": "fszlz95",
+          "face": "http://static.hdslb.com/images/member/noface.gif"
+        },
+        "stat": {
+          "aid": 13029236,
+          "view": 197388,
+          "danmaku": 5229,
+          "reply": 916,
+          "favorite": 1865,
+          "coin": 177,
+          "share": 584,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 147
+        },
+        "duration": 686,
+        "goto": "av",
+        "param": "13029236",
+        "uri": "bilibili://video/13029236"
+      },
+      {
+        "aid": 22413233,
+        "pic": "http://i0.hdslb.com/bfs/archive/000f637710cf6d8715f67d9ed285da0c3819fc7e.jpg",
+        "title": "我初次去了中国的时候...........",
+        "owner": {
+          "mid": 283802114,
+          "name": "久保田嶺",
+          "face": "http://i2.hdslb.com/bfs/face/8731966e19aa82f1f65ae0437508cd9d6e3e4aa8.jpg"
+        },
+        "stat": {
+          "aid": 22413233,
+          "view": 56660,
+          "danmaku": 353,
+          "reply": 628,
+          "favorite": 204,
+          "coin": 272,
+          "share": 32,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 336
+        },
+        "duration": 106,
+        "goto": "av",
+        "param": "22413233",
+        "uri": "bilibili://video/22413233"
+      },
+      {
+        "aid": 22477508,
+        "pic": "http://i1.hdslb.com/bfs/archive/219f051d79ad2f066681334b05e11d1cb9e11c24.jpg",
+        "title": "世纪大战：台湾口音VS东北口音",
+        "owner": {
+          "mid": 10345615,
+          "name": "Kevin英语情报局",
+          "face": "http://i2.hdslb.com/bfs/face/53fe99adfca8d78e0ebc569a52d32116cfd11eaf.jpg"
+        },
+        "stat": {
+          "aid": 22477508,
+          "view": 130946,
+          "danmaku": 1496,
+          "reply": 922,
+          "favorite": 1338,
+          "coin": 1809,
+          "share": 1485,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 2284
+        },
+        "duration": 372,
+        "goto": "av",
+        "param": "22477508",
+        "uri": "bilibili://video/22477508"
+      },
+      {
+        "aid": 22298418,
+        "pic": "http://i0.hdslb.com/bfs/archive/feacde19adecc7627b79817f9a018e630ccafc2b.jpg",
+        "title": "卖掉一切搬到中国去，单身爸爸在中国生活的一天（妻子出城两天）",
+        "owner": {
+          "mid": 9946483,
+          "name": "爱飞扬",
+          "face": "http://i0.hdslb.com/bfs/face/23ea1689bde800ca715d1b50f666bf92f0b28054.jpg"
+        },
+        "stat": {
+          "aid": 22298418,
+          "view": 119267,
+          "danmaku": 893,
+          "reply": 637,
+          "favorite": 333,
+          "coin": 69,
+          "share": 19,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 300
+        },
+        "duration": 920,
+        "goto": "av",
+        "param": "22298418",
+        "uri": "bilibili://video/22298418"
+      },
+      {
+        "aid": 22555671,
+        "pic": "http://i1.hdslb.com/bfs/archive/a791526ab8a4287a2850d9c7ff44ada22d4c099d.jpg",
+        "title": "日本人承包了抖音热门曲《少林英雄》油管评论区（心臓は全然戻らん﻿）",
+        "owner": {
+          "mid": 12357356,
+          "name": "中年的宅女",
+          "face": "http://i0.hdslb.com/bfs/face/b4af8833ef8793c75e91869be265527314de9b3f.jpg"
+        },
+        "stat": {
+          "aid": 22555671,
+          "view": 145737,
+          "danmaku": 316,
+          "reply": 536,
+          "favorite": 1033,
+          "coin": 430,
+          "share": 82,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 785
+        },
+        "duration": 265,
+        "goto": "av",
+        "param": "22555671",
+        "uri": "bilibili://video/22555671"
+      },
+      {
+        "aid": 21626229,
+        "pic": "http://i1.hdslb.com/bfs/archive/6b778529ce57a961e87508adceb4d4b1ddb625a1.png",
+        "title": "据说这是YouTube上最受欢迎的视频",
+        "owner": {
+          "mid": 92724477,
+          "name": "YouTubeABC",
+          "face": "http://i2.hdslb.com/bfs/face/830e85fe3b52fbd66ec2ba5db11d2bd591a13b91.jpg"
+        },
+        "stat": {
+          "aid": 21626229,
+          "view": 36232,
+          "danmaku": 197,
+          "reply": 22,
+          "favorite": 449,
+          "coin": 22,
+          "share": 67,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 112
+        },
+        "duration": 349,
+        "goto": "av",
+        "param": "21626229",
+        "uri": "bilibili://video/21626229"
+      },
+      {
+        "aid": 18470150,
+        "pic": "http://i1.hdslb.com/bfs/archive/0ce9098f91e8441fefb0f561dacd94983c400a6b.jpg",
+        "title": "回了英国,你想中国吗?",
+        "owner": {
+          "mid": 258959750,
+          "name": "伊莱Eli_Vlog",
+          "face": "http://i1.hdslb.com/bfs/face/6cbc8992fb0ab4926c28aef071bf89549473177c.jpg"
+        },
+        "stat": {
+          "aid": 18470150,
+          "view": 47142,
+          "danmaku": 98,
+          "reply": 57,
+          "favorite": 81,
+          "coin": 41,
+          "share": 6,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 74
+        },
+        "duration": 366,
+        "goto": "av",
+        "param": "18470150",
+        "uri": "bilibili://video/18470150"
+      },
+      {
+        "aid": 22336367,
+        "pic": "http://i0.hdslb.com/bfs/archive/dfc1e9ac17997843034eda339ce8a9dc905e20c6.jpg",
+        "title": "英国小姐姐告诉你：中国高中VS英国高中 有哪些不一样？",
+        "owner": {
+          "mid": 310797729,
+          "name": "艾爱玛",
+          "face": "http://i0.hdslb.com/bfs/face/71d105c6972c4ebe494bee8f91c2fb4a46cf37d2.jpg"
+        },
+        "stat": {
+          "aid": 22336367,
+          "view": 7362,
+          "danmaku": 198,
+          "reply": 74,
+          "favorite": 47,
+          "coin": 97,
+          "share": 3,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 111
+        },
+        "duration": 697,
+        "goto": "av",
+        "param": "22336367",
+        "uri": "bilibili://video/22336367"
+      },
+      {
+        "aid": 21943177,
+        "pic": "http://i1.hdslb.com/bfs/archive/8621d5dfb3093209143a8f4378041e1feb8c63ab.jpg",
+        "title": "这位诺奖得主成功拿到“中国绿卡”，打算在上海大干一场！",
+        "owner": {
+          "mid": 45110783,
+          "name": "天下有警",
+          "face": "http://i2.hdslb.com/bfs/face/f67df6c1f8be2b95268a5a2b5a50dadb05e23580.jpg"
+        },
+        "stat": {
+          "aid": 21943177,
+          "view": 147934,
+          "danmaku": 256,
+          "reply": 1308,
+          "favorite": 341,
+          "coin": 118,
+          "share": 49,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 570
+        },
+        "duration": 111,
+        "goto": "av",
+        "param": "21943177",
+        "uri": "bilibili://video/21943177"
+      },
+      {
+        "aid": 22215707,
+        "pic": "http://i2.hdslb.com/bfs/archive/fd2c9dda860251084a73af65a49f8c33fb2180f2.jpg",
+        "title": "一双眼睛拯救一张脸系列，太好看了吧！",
+        "owner": {
+          "mid": 38495628,
+          "name": "腹黑的青年人",
+          "face": "http://i1.hdslb.com/bfs/face/feb8ec08c9e8a8f4d7883c5a0ec29c695d6170f5.jpg"
+        },
+        "stat": {
+          "aid": 22215707,
+          "view": 765308,
+          "danmaku": 1200,
+          "reply": 1173,
+          "favorite": 2904,
+          "coin": 149,
+          "share": 577,
+          "now_rank": 0,
+          "his_rank": 82,
+          "like": 973
+        },
+        "duration": 90,
+        "goto": "av",
+        "param": "22215707",
+        "uri": "bilibili://video/22215707"
+      },
+      {
+        "aid": 9023256,
+        "pic": "http://i2.hdslb.com/bfs/archive/6eb5a71c0fb1ac11d07cbac620345e8b9712fec3.jpg",
+        "title": "英国没落贵族定居中国 四个女儿都会说一口流利的普通话 很自然！_",
+        "owner": {
+          "mid": 9259110,
+          "name": "樖蛋蛋",
+          "face": "http://i2.hdslb.com/bfs/face/689d1006131c7044af3ea7cacf75cb2a04051aa3.jpg"
+        },
+        "stat": {
+          "aid": 9023256,
+          "view": 236693,
+          "danmaku": 611,
+          "reply": 271,
+          "favorite": 1107,
+          "coin": 35,
+          "share": 48,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 167
+        },
+        "duration": 360,
+        "goto": "av",
+        "param": "9023256",
+        "uri": "bilibili://video/9023256"
+      },
+      {
+        "aid": 21922531,
+        "pic": "http://i0.hdslb.com/bfs/archive/67cf9b534779e23259187c75e5d7866ebbfe0003.jpg",
+        "title": "【快手大批“难民”涌入B站】我们应该怎么办？",
+        "owner": {
+          "mid": 267942945,
+          "name": "旁观者zhang",
+          "face": "http://i0.hdslb.com/bfs/face/4c559ab96d23379167815a28c28712277fd8ed7c.jpg"
+        },
+        "stat": {
+          "aid": 21922531,
+          "view": 97564,
+          "danmaku": 446,
+          "reply": 2558,
+          "favorite": 574,
+          "coin": 561,
+          "share": 190,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 800
+        },
+        "duration": 185,
+        "goto": "av",
+        "param": "21922531",
+        "uri": "bilibili://video/21922531"
+      },
+      {
+        "aid": 22483557,
+        "pic": "http://i0.hdslb.com/bfs/archive/39be474f4caf6cc2c25c074d0dd0b783c867d881.jpg",
+        "title": "中国对英国人的十一个刻板印象",
+        "owner": {
+          "mid": 310797729,
+          "name": "艾爱玛",
+          "face": "http://i0.hdslb.com/bfs/face/71d105c6972c4ebe494bee8f91c2fb4a46cf37d2.jpg"
+        },
+        "stat": {
+          "aid": 22483557,
+          "view": 6370,
+          "danmaku": 194,
+          "reply": 161,
+          "favorite": 70,
+          "coin": 242,
+          "share": 9,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 199
+        },
+        "duration": 488,
+        "goto": "av",
+        "param": "22483557",
+        "uri": "bilibili://video/22483557"
+      },
+      {
+        "aid": 21941420,
+        "pic": "http://i0.hdslb.com/bfs/archive/4b2da61d3814d4c79df184e308925240304f4b04.jpg",
+        "title": "英国学生数学差得让中国老师无法想象",
+        "owner": {
+          "mid": 21584475,
+          "name": "十凌丶",
+          "face": "http://i1.hdslb.com/bfs/face/1c8735c38ead1e03e368d68ab62d45f570212a14.jpg"
+        },
+        "stat": {
+          "aid": 21941420,
+          "view": 3500,
+          "danmaku": 15,
+          "reply": 6,
+          "favorite": 12,
+          "coin": 1,
+          "share": 4,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 8
+        },
+        "duration": 113,
+        "goto": "av",
+        "param": "21941420",
+        "uri": "bilibili://video/21941420"
+      },
+      {
+        "aid": 22535994,
+        "pic": "http://i1.hdslb.com/bfs/archive/22c85d3a92a69aa6d2fcee72f410c65370160049.jpg",
+        "title": "外国妹子在清华大学的一天 - YouTube",
+        "owner": {
+          "mid": 9946483,
+          "name": "爱飞扬",
+          "face": "http://i1.hdslb.com/bfs/face/23ea1689bde800ca715d1b50f666bf92f0b28054.jpg"
+        },
+        "stat": {
+          "aid": 22535994,
+          "view": 92876,
+          "danmaku": 559,
+          "reply": 288,
+          "favorite": 476,
+          "coin": 46,
+          "share": 27,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 292
+        },
+        "duration": 548,
+        "goto": "av",
+        "param": "22535994",
+        "uri": "bilibili://video/22535994"
+      },
+      {
+        "aid": 22202902,
+        "pic": "http://i1.hdslb.com/bfs/archive/9b72fbff761db37d7382cca774b86251992af91d.jpg",
+        "title": "【英国】家长参加小学数学考试 躲厕所崩溃大哭：笨死我算了！",
+        "owner": {
+          "mid": 382675,
+          "name": "全麦面包V5",
+          "face": "http://i1.hdslb.com/bfs/face/af833b621895d885556dfbfa08e9d1e8ca785703.gif"
+        },
+        "stat": {
+          "aid": 22202902,
+          "view": 38819,
+          "danmaku": 140,
+          "reply": 322,
+          "favorite": 202,
+          "coin": 10,
+          "share": 35,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 107
+        },
+        "duration": 91,
+        "goto": "av",
+        "param": "22202902",
+        "uri": "bilibili://video/22202902"
+      },
+      {
+        "aid": 20940824,
+        "pic": "http://i2.hdslb.com/bfs/archive/36b70d3edd27475c406d014445cc06155e6efcb5.jpg",
+        "title": "中国这些年干了什么？外国小姐姐直言：:我羡慕中国 我羡慕中国人",
+        "owner": {
+          "mid": 32750059,
+          "name": "蔚蓝News",
+          "face": "http://i0.hdslb.com/bfs/face/badc1f3dc43f5b27803fdd4f0828b4a816838f16.jpg"
+        },
+        "stat": {
+          "aid": 20940824,
+          "view": 114978,
+          "danmaku": 565,
+          "reply": 753,
+          "favorite": 575,
+          "coin": 159,
+          "share": 46,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 401
+        },
+        "duration": 200,
+        "goto": "av",
+        "param": "20940824",
+        "uri": "bilibili://video/20940824"
+      },
+      {
+        "aid": 22256795,
+        "pic": "http://i1.hdslb.com/bfs/archive/13d56d941ba166dab4060608f74d3328742be8ba.jpg",
+        "title": "伦敦街头的中式快餐店，英国小姐姐会颠勺会做中国炒面，要不要来一个？@不霸蛮咯",
+        "owner": {
+          "mid": 141652802,
+          "name": "不霸蛮咯",
+          "face": "http://i0.hdslb.com/bfs/face/d9825f9cdc0c7fd953659e82d21cedc906f5b566.jpg"
+        },
+        "stat": {
+          "aid": 22256795,
+          "view": 200732,
+          "danmaku": 759,
+          "reply": 495,
+          "favorite": 892,
+          "coin": 72,
+          "share": 236,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 414
+        },
+        "duration": 174,
+        "goto": "av",
+        "param": "22256795",
+        "uri": "bilibili://video/22256795"
+      },
+      {
+        "aid": 22409188,
+        "pic": "http://i2.hdslb.com/bfs/archive/0c0d8e1f12e4ae46b86d479bc45b70ba5fa9aeb9.jpg",
+        "title": "旁边的黑人小哥偷瞄了那里，表情亮了",
+        "owner": {
+          "mid": 1430004,
+          "name": "迷の瑞熙酱",
+          "face": "http://i0.hdslb.com/bfs/face/46cdd88583508912b6d922324fa3c3ac7da8d333.jpg"
+        },
+        "stat": {
+          "aid": 22409188,
+          "view": 305494,
+          "danmaku": 109,
+          "reply": 341,
+          "favorite": 2537,
+          "coin": 51,
+          "share": 105,
+          "now_rank": 0,
+          "his_rank": 23,
+          "like": 302
+        },
+        "duration": 21,
+        "goto": "av",
+        "param": "22409188",
+        "uri": "bilibili://video/22409188"
+      },
+      {
+        "aid": 12912223,
+        "pic": "http://i1.hdslb.com/bfs/archive/8e448c6a3e55eb48f92da6feae620c6b03d9846f.jpg",
+        "title": "能拿到中国绿卡的日本女老师究竟有多厉害？【我住在这里的理由78】",
+        "owner": {
+          "mid": 17244618,
+          "name": "和之梦放送",
+          "face": "http://i2.hdslb.com/bfs/face/c2dd46ac40ab45b024af0961c622123397f02756.jpg"
+        },
+        "stat": {
+          "aid": 12912223,
+          "view": 240117,
+          "danmaku": 4633,
+          "reply": 1448,
+          "favorite": 3783,
+          "coin": 12843,
+          "share": 1849,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 1528
+        },
+        "duration": 1226,
+        "goto": "av",
+        "param": "12912223",
+        "uri": "bilibili://video/12912223"
+      },
+      {
+        "aid": 22217453,
+        "pic": "http://i0.hdslb.com/bfs/archive/84b5fb3a0c1b7205909e506317f77983664ebffb.jpg",
+        "title": "英国女孩评价中国抖音变装挑战之男生版",
+        "owner": {
+          "mid": 310797729,
+          "name": "艾爱玛",
+          "face": "http://i0.hdslb.com/bfs/face/71d105c6972c4ebe494bee8f91c2fb4a46cf37d2.jpg"
+        },
+        "stat": {
+          "aid": 22217453,
+          "view": 16087,
+          "danmaku": 75,
+          "reply": 26,
+          "favorite": 47,
+          "coin": 43,
+          "share": 4,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 89
+        },
+        "duration": 308,
+        "goto": "av",
+        "param": "22217453",
+        "uri": "bilibili://video/22217453"
+      },
+      {
+        "aid": 21067789,
+        "pic": "http://i0.hdslb.com/bfs/archive/1ea7424781eb7caf6bdd26952d2c02db14ff3818.jpg",
+        "title": "连续两周每天喝水6升左右，看看会给我带来什么改变？",
+        "owner": {
+          "mid": 28621274,
+          "name": "Viviiiwang",
+          "face": "http://i0.hdslb.com/bfs/face/e088e209c56e64029e16072d4a8d3c356327d13e.jpg"
+        },
+        "stat": {
+          "aid": 21067789,
+          "view": 179887,
+          "danmaku": 501,
+          "reply": 790,
+          "favorite": 699,
+          "coin": 32,
+          "share": 140,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 202
+        },
+        "duration": 781,
+        "goto": "av",
+        "param": "21067789",
+        "uri": "bilibili://video/21067789"
+      },
+      {
+        "aid": 21938658,
+        "pic": "http://i1.hdslb.com/bfs/archive/c9e4ccec091e21a368e8563aeb2dbd156a5b4367.jpg",
+        "title": "这是世界上独一无二的守护，真正的中国军人！为兵哥哥们点赞",
+        "owner": {
+          "mid": 33019216,
+          "name": "铭记历史砥砺前行",
+          "face": "http://i2.hdslb.com/bfs/face/6c85f9d4bcc3ba37f227fe8e50073b949be728d1.jpg"
+        },
+        "stat": {
+          "aid": 21938658,
+          "view": 253540,
+          "danmaku": 78,
+          "reply": 629,
+          "favorite": 523,
+          "coin": 139,
+          "share": 27,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 1016
+        },
+        "duration": 20,
+        "goto": "av",
+        "param": "21938658",
+        "uri": "bilibili://video/21938658"
+      },
+      {
+        "aid": 21557066,
+        "pic": "http://i1.hdslb.com/bfs/archive/0c8237baea87446f94af3c86ccb040d7e22b8eb8.png",
+        "title": "外国人写中文是一种什么体验！全程爆笑",
+        "owner": {
+          "mid": 15790891,
+          "name": "超皮老外in_China",
+          "face": "http://i1.hdslb.com/bfs/face/9f877b6f7933633542f9ef205358148751a7b3f4.jpg"
+        },
+        "stat": {
+          "aid": 21557066,
+          "view": 48992,
+          "danmaku": 154,
+          "reply": 121,
+          "favorite": 253,
+          "coin": 93,
+          "share": 72,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 248
+        },
+        "duration": 145,
+        "goto": "av",
+        "param": "21557066",
+        "uri": "bilibili://video/21557066"
+      },
+      {
+        "aid": 21979422,
+        "pic": "http://i0.hdslb.com/bfs/archive/431d85fcfe9cc6189f9d400c3f0228d7e6488598.jpg",
+        "title": "等等…刚刚英国代表在联合国说了啥？",
+        "owner": {
+          "mid": 10330740,
+          "name": "观察者网",
+          "face": "http://i0.hdslb.com/bfs/face/627ec7bbae0b4b8453fdde408f1c5b503717a140.jpg"
+        },
+        "stat": {
+          "aid": 21979422,
+          "view": 566068,
+          "danmaku": 695,
+          "reply": 3243,
+          "favorite": 1966,
+          "coin": 528,
+          "share": 1232,
+          "now_rank": 0,
+          "his_rank": 28,
+          "like": 1856
+        },
+        "duration": 25,
+        "goto": "av",
+        "param": "21979422",
+        "uri": "bilibili://video/21979422"
+      },
+      {
+        "aid": 22282869,
+        "pic": "http://i1.hdslb.com/bfs/archive/843f73671244f0cc2a2d7058293b4170ac4c7381.jpg",
+        "title": "韩国人看《家有儿女》十二年之约 笑着笑着最后就哭了",
+        "owner": {
+          "mid": 203708804,
+          "name": "肌肉山山",
+          "face": "http://i1.hdslb.com/bfs/face/6e5a82548b843ea4196dc62dd6b33f74eb481768.jpg"
+        },
+        "stat": {
+          "aid": 22282869,
+          "view": 300667,
+          "danmaku": 959,
+          "reply": 399,
+          "favorite": 1317,
+          "coin": 511,
+          "share": 57,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 1237
+        },
+        "duration": 493,
+        "goto": "av",
+        "param": "22282869",
+        "uri": "bilibili://video/22282869"
+      },
+      {
+        "aid": 22253157,
+        "pic": "http://i2.hdslb.com/bfs/archive/d1f81f53264d16711992e0290e5ad4ca91e06aa9.jpg",
+        "title": "英国女孩评价中国抖音变装挑战之女生版",
+        "owner": {
+          "mid": 310797729,
+          "name": "艾爱玛",
+          "face": "http://i2.hdslb.com/bfs/face/71d105c6972c4ebe494bee8f91c2fb4a46cf37d2.jpg"
+        },
+        "stat": {
+          "aid": 22253157,
+          "view": 44047,
+          "danmaku": 170,
+          "reply": 99,
+          "favorite": 140,
+          "coin": 80,
+          "share": 4,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 160
+        },
+        "duration": 337,
+        "goto": "av",
+        "param": "22253157",
+        "uri": "bilibili://video/22253157"
+      },
+      {
+        "aid": 22178214,
+        "pic": "http://i1.hdslb.com/bfs/archive/e2c0df30503b50cc47d4a8f92d4f52d61dccc831.jpg",
+        "title": "英国女孩吃臭豆腐（闻起来像 XXXX？！）",
+        "owner": {
+          "mid": 310797729,
+          "name": "艾爱玛",
+          "face": "http://i0.hdslb.com/bfs/face/71d105c6972c4ebe494bee8f91c2fb4a46cf37d2.jpg"
+        },
+        "stat": {
+          "aid": 22178214,
+          "view": 3494,
+          "danmaku": 44,
+          "reply": 34,
+          "favorite": 4,
+          "coin": 32,
+          "share": 0,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 43
+        },
+        "duration": 133,
+        "goto": "av",
+        "param": "22178214",
+        "uri": "bilibili://video/22178214"
+      },
+      {
+        "aid": 22163441,
+        "pic": "http://i0.hdslb.com/bfs/archive/a1820d2240c512240c2ace0008a4c543b41c4101.jpg",
+        "title": "有志气！这个北大的香港学生想当选调生 去大西北服务人民",
+        "owner": {
+          "mid": 32750059,
+          "name": "那年冬天lalala",
+          "face": "http://i1.hdslb.com/bfs/face/badc1f3dc43f5b27803fdd4f0828b4a816838f16.jpg"
+        },
+        "stat": {
+          "aid": 22163441,
+          "view": 20958,
+          "danmaku": 113,
+          "reply": 198,
+          "favorite": 177,
+          "coin": 108,
+          "share": 18,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 242
+        },
+        "duration": 187,
+        "goto": "av",
+        "param": "22163441",
+        "uri": "bilibili://video/22163441"
+      },
+      {
+        "aid": 22145935,
+        "pic": "http://i0.hdslb.com/bfs/archive/e147269e2f991e407704e05ee89fb2eb64672d55.jpg",
+        "title": "全世界都在为中国种菜？外国农民感慨：没有中国人我们已经破产",
+        "owner": {
+          "mid": 117746902,
+          "name": "最游感觉",
+          "face": "http://i0.hdslb.com/bfs/face/322464fb927c7588d36ee0a7117e8c16ae7bc803.jpg"
+        },
+        "stat": {
+          "aid": 22145935,
+          "view": 52397,
+          "danmaku": 116,
+          "reply": 278,
+          "favorite": 127,
+          "coin": 18,
+          "share": 14,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 130
+        },
+        "duration": 112,
+        "goto": "av",
+        "param": "22145935",
+        "uri": "bilibili://video/22145935"
+      },
+      {
+        "aid": 21981028,
+        "pic": "http://i0.hdslb.com/bfs/archive/390a4088d6dee46c6ccf7f2f6af08bc52d77d74e.jpg",
+        "title": "我教中国朋友们英国女孩怎么化妆？",
+        "owner": {
+          "mid": 310797729,
+          "name": "艾爱玛",
+          "face": "http://i0.hdslb.com/bfs/face/71d105c6972c4ebe494bee8f91c2fb4a46cf37d2.jpg"
+        },
+        "stat": {
+          "aid": 21981028,
+          "view": 2150,
+          "danmaku": 65,
+          "reply": 27,
+          "favorite": 15,
+          "coin": 60,
+          "share": 1,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 54
+        },
+        "duration": 469,
+        "goto": "av",
+        "param": "21981028",
+        "uri": "bilibili://video/21981028"
+      },
+      {
+        "aid": 22263559,
+        "pic": "http://i2.hdslb.com/bfs/archive/5cff890643af3cc2664714764906db272450fad9.png",
+        "title": "【不要闹】欧洲人挑战亚洲蹲 结果哪国人最会？",
+        "owner": {
+          "mid": 212367299,
+          "name": "杀不死的水熊",
+          "face": "http://i0.hdslb.com/bfs/face/db632086715d09e29338fb573d80a74decf009f2.jpg"
+        },
+        "stat": {
+          "aid": 22263559,
+          "view": 193738,
+          "danmaku": 437,
+          "reply": 734,
+          "favorite": 531,
+          "coin": 26,
+          "share": 41,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 241
+        },
+        "duration": 119,
+        "goto": "av",
+        "param": "22263559",
+        "uri": "bilibili://video/22263559"
+      },
+      {
+        "aid": 21676328,
+        "pic": "http://i2.hdslb.com/bfs/archive/bfb8c4b416fae60e18a79138801bb1e1aa413856.png",
+        "title": "老外看到上海星巴克的规模，惊呆了！",
+        "owner": {
+          "mid": 217686462,
+          "name": "有个苍蝇",
+          "face": "http://i2.hdslb.com/bfs/face/6b0aa1dec0d1c0edecd38d343c06b11834150292.jpg"
+        },
+        "stat": {
+          "aid": 21676328,
+          "view": 63290,
+          "danmaku": 388,
+          "reply": 256,
+          "favorite": 246,
+          "coin": 9,
+          "share": 53,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 77
+        },
+        "duration": 693,
+        "goto": "av",
+        "param": "21676328",
+        "uri": "bilibili://video/21676328"
+      },
+      {
+        "aid": 22064397,
+        "pic": "http://i1.hdslb.com/bfs/archive/fa989afda0dd7b9c1ade64959db7472864daee6a.jpg",
+        "title": "外国专家体验长城砖制作过程后，才知道中国人多伟大",
+        "owner": {
+          "mid": 21584475,
+          "name": "十凌丶",
+          "face": "http://i1.hdslb.com/bfs/face/1c8735c38ead1e03e368d68ab62d45f570212a14.jpg"
+        },
+        "stat": {
+          "aid": 22064397,
+          "view": 22425,
+          "danmaku": 29,
+          "reply": 156,
+          "favorite": 99,
+          "coin": 10,
+          "share": 3,
+          "now_rank": 0,
+          "his_rank": 0,
+          "like": 46
+        },
+        "duration": 123,
+        "goto": "av",
+        "param": "22064397",
+        "uri": "bilibili://video/22064397"
+      }
+    ],
+    "dislike_reasons": [
+      {
+        "reason_id": 5,
+        "reason_name": "标题党/封面党"
+      },
+      {
+        "reason_id": 6,
+        "reason_name": "内容质量差"
+      },
+      {
+        "reason_id": 7,
+        "reason_name": "内容/封面令人不适"
+      },
+      {
+        "reason_id": 8,
+        "reason_name": "营销广告"
+      }
+    ],
+    "dm_seg": 1,
+    "paster": {
+      "aid": 0,
+      "cid": 0,
+      "duration": 0,
+      "type": 0,
+      "allow_jump": 0,
+      "url": ""
+    },
+    "vip_active": "半价",
+    "cm": {
+      "request_id": "1524995585",
+      "src_id": 2338,
+      "is_ad_loc": true
+    }
+  }
+}

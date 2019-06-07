@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/rl/rl_list.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/rl/rl_list.js"></script>
+{% endblock %}
+{% block body %}
+    <ul class="list-group list">
+        {% include 'rl/rl_list_content.html' %}
+    </ul>
+{% endblock %}

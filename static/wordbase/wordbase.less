@@ -1,0 +1,31 @@
+@import "../collection/collection";
+
+.wordbase-highlight{
+  font-weight: bold;
+  background-color: yellow;
+}
+
+video::cue(c.video-heightlight) {
+  color: yellow;
+}
+
+c.video-heightlight::-webkit-media-text-track-display  {
+    color: yellow;
+}
+
+
+.wordbase_video_player{
+    width: 100%;
+    height: auto;
+  }
+
+@media screen and (min-width: 768px) {
+  .wordbase_video_player{
+    width: 1024px;
+    height: 560px;
+  }
+}
+
+.none_lang{
+  margin-bottom: 8px;
+}

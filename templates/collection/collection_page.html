@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/collection/collection.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/collection/collection.js"></script>
+{% endblock %}
+{% block body %}
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+
+        <ul class="list-group list">
+            {% include 'collection/collection_list_content.html' %}
+        </ul>
+    </div>
+    <div class="col-sm-1">
+    </div>
+{% endblock %}

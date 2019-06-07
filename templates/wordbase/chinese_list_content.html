@@ -1,0 +1,9 @@
+{% extends 'includes/list_content.html' %}
+{% block list_item %}
+    <li class="list-group-item list_item">
+        <h3>{{ list_item.word }}</h3>
+        <blockquote>
+            <p>{{ list_item.explanation }}</p>
+        </blockquote>
+    </li>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% for item in list %}
+    {% if item.word_type == 'wordset' %}
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-xs-2 col-md-1">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="wordset_id" value="{{ item.wordset_id }}" data-type="wordset">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-md-11" style="border-left: 1px solid grey">
+                    {% for inner_item in item.wordset %}
+                        <div class="row">
+                            <div class="col-xs-2 col-md-1">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="word_id" value="{{ inner_item.word_id }}"
+                                               data-type="word" data-wordset_id="{{ item.wordset_id }}" >
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-10 col-md-11">
+                                <h5>{{ inner_item.translate }}</h5>
+                                <p>{{ inner_item.en.word }}</p>
+                                <p>{{ inner_item.jp.word }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </li>
+    {% elif item.word_type == 'expression' %}
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-xs-2 col-md-1">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="word_id" value="{{ item.word_id }}" data-type="expression">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-md-11" style="border-left: 1px solid grey">
+                    <h5>{{ item.translate }}</h5>
+                    <p>{{ item.en.expression }}</p>
+                    <p>{{ item.jp.expression }}</p>
+                </div>
+            </div>
+        </li>
+    {% elif item.word_type == 'sentence' %}
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-xs-2 col-md-1">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="word_id" value="{{ item.word_id }}" data-type="sentence">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-md-11" style="border-left: 1px solid grey">
+                    <h5>{{ item.translate }}</h5>
+                    <p>{{ item.en.sentence }}</p>
+                    <p>{{ item.jp.sentence }}</p>
+                </div>
+            </div>
+        </li>
+    {% endif %}
+{% endfor %}
+
+
+

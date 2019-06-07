@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/tieba/postbar/postbar.css">
+{% endblock %}
+{% block js %}
+    <script>
+        require(['/static/core/js/nav.js'], function () {
+
+        });
+    </script>
+{% endblock %}
+{% block body %}
+    <div class="col-sm-1"></div>
+    <div class="col-sm-8">
+        <ul class="list-group list">
+            {% include 'tieba/postbar/postbar_list_content.html' %}
+        </ul>
+    </div>
+    <div class="col-sm-3">
+    </div>
+{% endblock %}

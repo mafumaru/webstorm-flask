@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+    <div class="col-xs-5 col-md-2">
+        <a href="/module/zhihu/view/ZhihuPeopleView/render?name={{ list_item.row_name }}">
+            <img src="{{ list_item.glance.avatar_url_template|replace("{size}","xl") }}" class="img-thumbnail">
+        </a>
+    </div>
+    <div class="col-xs-7 col-md-10">
+        <a href="/module/zhihu/view/ZhihuPeopleView/render?name={{ list_item.row_name }}"><h3>{{ list_item.glance.name }}</h3></a>
+        <p>{{ list_item.glance.headline }}</p>
+    </div>
+</div>
+</div>

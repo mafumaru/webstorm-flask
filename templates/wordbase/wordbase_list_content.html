@@ -1,0 +1,84 @@
+{% extends 'includes/list_content.html' %}
+{% block list_item %}
+    {% if list_item.word_type =='wordset' %}
+        {% for list_item in list_item.wordset %}
+            <li class="list-group-item list_item">
+                {% if list_item.en.word %}
+                    <h3>{{ list_item.en.word }}</h3>
+                    {% if list_item.en.pronounce %}
+                        <h3>{{ list_item.en.pronounce }}</h3>
+                    {% endif %}
+                    {% for list_item in list_item.en.source %}
+                        {% include 'wordbase/source.html' %}
+                    {% endfor %}
+                {% else %}
+                    {% include 'wordbase/none_lang_en.html' %}
+                {% endif %}
+                {% if list_item.jp.word %}
+                    <h3>{{ list_item.jp.word }}</h3>
+                    {% if list_item.jp.pronounce %}
+                        <h3>{{ list_item.jp.pronounce }}</h3>
+                    {% endif %}
+                    {% for list_item in list_item.jp.source %}
+                        {% include 'wordbase/source.html' %}
+                    {% endfor %}
+                {% else %}
+                    <div class="none_lang">
+                        {% include 'wordbase/none_lang_jp.html' %}
+                    </div>
+                {% endif %}
+                <blockquote>
+                    <p>{{ list_item.translate }}</p>
+{#                    <p>{{ list_item.translate }}<button class="btn btn-default update_translate_btn"><span class="glyphicon glyphicon-pencil" style="margin-top: 4.5px;margin-left: -0.5px"></span></button></p>#}
+                </blockquote>
+                {% include 'wordbase/tags.html' %}
+            </li>
+        {% endfor %}
+    {% elif list_item.word_type =='expression' %}
+        <li class="list-group-item list_item">
+            {% if list_item.en.expression %}
+                <h3>{{ list_item.en.expression }}</h3>
+                {% for list_item in list_item.en.source %}
+                    {% include 'wordbase/source.html' %}
+                {% endfor %}
+            {% else %}
+                {% include 'wordbase/none_lang_en.html' %}
+            {% endif %}
+            {% if list_item.jp.expression %}
+                <h3>{{ list_item.jp.expression }}</h3>
+                {% for list_item in list_item.jp.source %}
+                    {% include 'wordbase/source.html' %}
+                {% endfor %}
+            {% else %}
+                {% include 'wordbase/none_lang_jp.html' %}
+            {% endif %}
+            <blockquote>
+                <p>{{ list_item.translate }}</p>
+            </blockquote>
+            {% include 'wordbase/tags.html' %}
+        </li>
+    {% elif list_item.word_type =='sentence' %}
+        <li class="list-group-item list_item">
+        {% if list_item.en.sentence %}
+            <h3>{{ list_item.en.sentence }}</h3>
+            {% for list_item in list_item.en.source %}
+                {% include 'wordbase/source.html' %}
+            {% endfor %}
+        {% else %}
+            {% include 'wordbase/none_lang_en.html' %}
+        {% endif %}
+        {% if list_item.jp.sentence %}
+            <h3>{{ list_item.jp.sentence }}</h3>
+            {% for list_item in list_item.jp.source %}
+                {% include 'wordbase/source.html' %}
+            {% endfor %}
+        {% else %}
+            {% include 'wordbase/none_lang_jp.html' %}
+        {% endif %}
+        <blockquote>
+            <p>{{ list_item.translate }}</p>
+        </blockquote>
+        {% include 'wordbase/tags.html' %}
+    {% endif %}
+
+{% endblock %}

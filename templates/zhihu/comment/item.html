@@ -1,0 +1,22 @@
+<div class="author row" {% if list_item.reply_to_author %}style="margin-left: 50px" {% endif %}>
+    <div class="col-xs-10">
+        <div class="avatar_block"><a href="{{ list_item.author.member.url |replace("/api/v4", "")}}"><img class="avatar"
+                                                                        src="{{ list_item.author.member.avatar_url_template|replace("{size}","xs") }}"></a>
+    </div>
+    <div class="author_block">
+        <a href="{{ list_item.author.member.url |replace("/api/v4", "")}}" class="author"><b>{{ list_item.author.member.name }} </b></a>&nbsp; {% if list_item.reply_to_author %} 回复@ <a href="{{ list_item.reply_to_author.member.url |replace("/api/v4", "")}}" class="author"><b>{{ list_item.reply_to_author.member.name }}</b> {% endif %}</a>
+        <div class="author-headline">{{ list_item.created_time|strftime() }} </div>
+    </div>
+    <div>{{ list_item.content |safe}}</div>
+    </div>
+    {% if base.collection.type =='zhihu_comment' %}
+        <div class="col-xs-2">
+            <div class="zhihu_comment-bar">
+                <button class="btn btn-default fav" data-toggle="modal" data-target="#collection_choose"
+                        data-type="{{ base.collection.type }}" data-table_name="{{ base.collection.table_name }}"
+                        data-id="{{ list_item.id }}">收藏
+                </button>
+            </div>
+        </div>
+    {% endif %}
+</div>

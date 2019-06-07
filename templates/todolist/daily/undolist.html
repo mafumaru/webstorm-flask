@@ -1,0 +1,8 @@
+{% for item in list %}
+    <div class="checkbox col-xs-6 col-md-6">
+        <label>
+            <input type="checkbox" name="undolist_radio"
+                   value="{{ item.id }}"> {{ item.content }}
+        </label>
+    </div>
+{% endfor %}

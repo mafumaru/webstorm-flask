@@ -1,0 +1,18 @@
+<div class="container">
+    <h3 class="title_h3"><a href="{{ list_item.glance.question.url |replace("questions","question")|replace("api","www") }}/answer/{{ list_item.glance.id }}"
+       class="title"><b>{{ list_item.glance.question.title }}</b></a></h3>
+    <div class="author">
+        <div class="avatar_block"><a href="{{ list_item.glance.author.url |replace("api", "www") }}"><img class="avatar" src="{{ list_item.glance.author.avatar_url_template|replace("{size}","xs") }}"></a>
+        </div>
+        <div class="author_block">
+            <a href="{{ list_item.glance.author.url |replace("api", "www") }}" class="author"><b>{{ list_item.glance.author.name }}</b></a>
+            <div class="author-headline">{{ list_item.glance.author.headline }}</div>
+        </div>
+    </div>
+    <div class="main-content-copy">
+        <div class="row">
+                <div class="text-content"><a href="/module/zhihu/view/ZhihuCommentView/render?name={{ list_item.row_name }}">{{ list_item.glance.excerpt|safe }}</a>
+                </div>
+        </div>
+    </div>
+</div>

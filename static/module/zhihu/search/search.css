@@ -1,0 +1,108 @@
+.bar .vote {
+  display: inline-block;
+  background: #e5f2ff;
+  color: #3f96ff;
+  border: 1px;
+}
+.bar .shut {
+  display: none;
+  margin-left: 400px;
+}
+@media screen and (max-width: 768px) {
+  .bar .shut {
+    margin-left: 0;
+  }
+}
+body {
+  background: #f6f6f6;
+}
+body .zhihu-answers {
+  padding-left: 3px;
+  padding-right: 3px ;
+}
+.list {
+  height: auto;
+  background: #ffffff;
+}
+.list a.title {
+  font-size: 18px;
+}
+.list .title_h3 {
+  margin-top: 0;
+}
+.main-content {
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 1.67;
+}
+.main-content img.item {
+  width: 100%;
+  border-radius: 3px;
+}
+.main-content .text-content {
+  letter-spacing: 0.02em;
+  line-height: 1.67em;
+  font-size: 16px;
+  max-height: 6.68em;
+  overflow: hidden;
+}
+.main-content-copy {
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 1.67;
+}
+.main-content-copy img.item {
+  width: 100%;
+  border-radius: 3px;
+}
+.main-content-copy .text-content {
+  letter-spacing: 0.02em;
+  line-height: 1.67em;
+  font-size: 16px;
+  max-height: 6.68em;
+  overflow: hidden;
+}
+.detail-content {
+  display: none;
+  letter-spacing: 0.04em;
+  line-height: 1.67em;
+  font-size: 17px;
+}
+.author img.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 3px;
+}
+.author .avatar_block {
+  vertical-align: top;
+  margin-right: 7px;
+  display: inline-block;
+}
+.author .author_block {
+  display: inline-block;
+}
+.author .author-headline {
+  font-size: 14px;
+  color: #646464;
+}
+.voted {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.voted a {
+  color: #8590a6;
+}
+.zhihu-comment-avatar {
+  width: 38 px;
+  height: 38 px;
+  position: absolute;
+}
+.zhihu-comment-userinfo {
+  width: 38 px;
+  height: 38 px;
+  position: absolute;
+}
+em {
+  font-style: normal;
+  color: #F1403C;
+}

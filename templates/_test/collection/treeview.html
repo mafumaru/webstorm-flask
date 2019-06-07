@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!-- Required Stylesheets -->
+<link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="/static/lib/jquery.min.js"></script>
+<script src="/static/lib/bootstrap-treeview.js"></script>
+<body>
+<div id="tree"></div>
+</body>
+<script>
+{#    var treedata = [#}
+{#            {'text': '收藏', 'nodes': [#}
+{#                {'text': 'sub1'},#}
+{#                {'text': 'sub2'}#}
+{#            ]},#}
+{#            {'text': '收藏'}#}
+{#        ];#}
+    var treedata = [
+            {'text': '收藏'},
+            {'text': '收藏'}
+        ];
+
+{#var treedata = {text: '收藏'};#}
+
+{#    console.log(treedata);#}
+    // console.log(typeof treedata);
+    $('#tree').treeview({
+        data: treedata
+    });
+    var addNode = {'text': '收藏21'};
+{#    $("#tree").treeview("addNode", [0,addNode]);#}
+{#    $("#tree").treeview("addNode", [0,{node: addNode}]);#}
+    $("#tree").treeview("addNode", [0,{node:{ text: addNode}}]);
+{#    $("#tree").treeview("deleteNode", 1);#}
+    console.log('after add');
+    console.log(treedata);
+</script>
+</html>

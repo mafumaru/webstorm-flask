@@ -1,0 +1,253 @@
+<nav class="navbar navbar-default navbar-fixed-top" id="webstorm_nav">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Webstorm</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Read Later <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" id="rl_menu">
+{#                        <li><a href="/module/rl/view/ReadLaterView/page_render">Homepage</a></li>#}
+{#                        <li role="separator" class="divider"></li>#}
+                        {% for rl_item in base.nav %}
+                            <li>
+                                <a href="/module/rl/view/ReadLaterListView/render?list_id={{ rl_item.list_id }}">{{ rl_item.list_name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#collection">Collection </a></li>
+                <li><a href="/module/todolist/view/TodolistView/homepage">TODO List </a></li>
+                <li><a href="/module/wuxiaworld/view/NovelView/render?novel=douluodalu">Novel </a></li>
+                <li><a href="/module/wordbase/view/WordbaseView/wordbase_index">Word Base </a></li>
+                <li><a href="/module/wordbase/view/ChineseView/render?table_name=source">Note </a></li>
+                <li><a href="/module/zhihu/view/ZhihuRecommendView/render?table_name=recommend">Follow </a></li>
+                <li><a href="/module/tieba/view/TiebaPostbarView/bars">Bar </a></li>
+                <li><a href="#" class="hidden-xs">Hand Writing </a></li>
+                <li class="hidden" ><a href="#" class="hidden">Bangumi </a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="rl_input">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" data-toggle="modal"
+                                data-target="#rlModal" id="rl_modal_trigger">Go</button>
+                    </span>
+                </div>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--Read Later Modal -->
+<div class="modal fade" id="rlModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Choose Read Later List</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="row" id="dir_list">
+                        {% for rl_item in base.nav %}
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="list_id"
+                                           value="{{ rl_item.list_id }}"> {{ rl_item.list_name }}
+                                </label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <form class="form-inline">
+                    <div class="input-group" id="add_rl_list">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="rl_dir_delete"><span
+                                    class="glyphicon glyphicon-minus"></span></button>
+                        </div>
+                        <input type="text" class="form-control" id="rl_dir_input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="rl_dir_add"><span
+                                    class="glyphicon glyphicon-plus"></span></button>
+                            <button type="button" class="btn btn-primary" id="rl_save" data-dismiss="modal">Save
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Collection Modal -->
+<div class="modal fade" id="collection_choose" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Choose Collection List</h4>
+            </div>
+            <div class="modal-body">
+                <div id="tree"></div>
+            </div>
+            <div class="modal-footer">
+                <form class="form-inline">
+                    <div class="input-group" id="control_collection">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="collection_dir_delete"><span
+                                    class="glyphicon glyphicon-minus"></span></button>
+                        </div>
+                        <input type="text" class="form-control" id="collection_dir_input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="add_collection_dir"><span
+                                    class="glyphicon glyphicon-plus"></span></button>
+                            <button type="button" class="btn btn-primary" id="collection_save" data-dismiss="modal">Save
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="collection" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="collection_tree"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Word Base Modal -->
+<div class="hidden">
+<button id="wordbase_test" class="btn btn-primary btn-circle btn-lg visible-xs-block" style="position: fixed;bottom: 70px;left: 20px;z-index: 100" data-toggle="modal" data-target="#wordbase_choose">W</button>
+</div>
+<div class="btn-group" id="word_base_bar" style="position:absolute;z-index:1000;display: none">
+  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#wordbase_choose">复制</button>
+</div>
+
+<div class="modal fade" id="wordbase_choose" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Word Base Chooese</h4>
+            </div>
+            <div class="modal-body">
+                <p><span class="selected_word"></span></p>
+                <p>Translation：<span class="translate"></span></p>
+                <form class="form-inline">
+                    <div class="row" id="word_collection_list">
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="word_collection"
+                                           value="fresh"> Fresh Word
+                                </label>
+                            </div>
+                        <div class="radio col-xs-6 col-md-3">
+                            <label>
+                                <input type="radio" name="word_collection"
+                                       value="regular"> Daily Regular
+                            </label>
+                        </div>
+                        <div class="radio col-xs-6 col-md-3">
+                            <label>
+                                <input type="radio" name="word_collection"
+                                       value="fun"> Funny word
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <form class="form-inline">
+                    <div class="row" id="word_type_list">
+                        <div class="radio col-xs-6 col-md-3">
+                            <label>
+                                <input type="radio" name="word_type"
+                                       value="sentence"> Sentence
+                            </label>
+                        </div>
+                        <div class="radio col-xs-6 col-md-3">
+                            <label>
+                                <input type="radio" name="word_type"
+                                       value="expression"> Expression
+                            </label>
+                        </div>
+                        <div class="radio col-xs-6 col-md-3">
+                            <label>
+                                <input type="radio" name="word_type"
+                                       value="wordset"> wordset
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <form class="form-inline">
+                    <div class="row" id="group_list">
+
+                    </div>
+                </form>
+                <br>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="wb_group_delete"><span
+                                    class="glyphicon glyphicon-minus"></span></button>
+                        </div>
+                        <input type="text" class="form-control" id="wb_group_input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="wb_group_add"><span
+                                    class="glyphicon glyphicon-plus"></span></button>
+                        </div>
+                    </div>
+                    <div class="input-group" style="height: 10px"></div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="wb_search_keyword" >
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="wb_search_v" href="javascipt:void(0);">zh</a></li>
+                                <li><a class="wb_search_v" href="javascipt:void(0);">jp</a></li>
+                                <li><a class="wb_search_v" href="javascipt:void(0);">en</a></li>
+                            </ul>
+                        </div>
+
+{#                        <span class="input-group-btn">#}
+{#                        <button class="btn btn-default glyphicon glyphicon-search" type="button"#}
+{#                                style="margin-top: -1.5px" id="" ></button>#}
+{#                    </span>#}
+                    </div>
+                </form>
+                <ul class="list-group" style="margin-top: 5px" id="wb_search_">
+
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" style="display: none" id="wordbase_upload_byVideo" data-dismiss="modal">Upload</button>
+                <button class="btn btn-default" style="display: none" id="wordbase_upload_by_novel" data-dismiss="modal">Upload</button>
+                <button class="btn btn-default" style="display: none" id="wordbase_upload_by_novel_comment" data-dismiss="modal">Upload</button>
+                <button class="btn btn-primary" id="wordbase_upload" data-dismiss="modal">Upload</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

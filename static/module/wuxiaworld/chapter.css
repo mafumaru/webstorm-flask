@@ -1,0 +1,12 @@
+.chapter-text {
+  line-height: 4em;
+}
+.chapter-text p {
+  margin: 0;
+}
+.cross-p {
+  margin-bottom: 4em;
+}
+.correct-btn {
+  background-color: #FFFFFF;
+}

@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/zhihu/question/question.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/zhihu/question/question.js"></script>
+{% endblock %}
+{% block body %}
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8 zhihu-answers">
+
+            <ul class="list-group list">
+                {% include 'zhihu/question/answer_list_content.html' %}
+            </ul>
+        </div>
+        <div class="col-sm-3">
+        </div>
+{% endblock %}

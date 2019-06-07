@@ -1,0 +1,67 @@
+{% extends 'base/base.html' %}
+{% block css %}
+{% endblock %}
+{% block js %}
+    <script>
+        require(['/static/core/js/nav.js'], function () {
+            $('#bilibili_relate_add').on('click', function () {
+                var input = $('#bilibili_relate_input');
+                $.post('/module/bilibili/helper/BilibiliRelateHelper/add_root', {
+                    url: input.val().trim()
+                }, function (data) {
+                    input.val('')
+                });
+            });
+
+            $('.delete_bilibili_relate_btn').on('click', function () {
+                $.get('/module/bilibili/helper/BilibiliRelateHelper/delete', {
+                    id: $(this).data('id')
+                }, function (data) {
+                    window.location.reload()
+                })
+            })
+        })
+    </script>
+{% endblock %}
+{% block body %}
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="text" class="form-control" id="bilibili_relate_input">
+            <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="bilibili_relate_add">Relate</button>
+                    </span>
+        </div>
+    </form>
+
+    <ul class="list-group">
+        {% for item in data %}
+            <li class="list-group-item row" style="padding: 3px">
+                <div class="col-xs-11"
+                     onclick="window.open('/module/bilibili/view/BilibiliRelateView/resume_view?id={{ item.aid }}')">
+                    <a class="row" href="/module/bilibili/view/BilibiliRelateView/resume_view?id={{ item.aid }}"
+                       onclick="return false" style="margin: 0">
+                        <div class="col-md-3 col-xs-5">
+                            <img src="{{ item.pic }}" class="img-rounded img-responsive" style="padding: 0">
+                            <span style="position: absolute;z-index: 999;color: whitesmoke;background-color:dimgrey;margin-top: -20px">{{ (item.duration / 60) | int }}:{{ (item.duration % 60) }}</span>
+                        </div>
+                        <div class="col-md-9 col-xs-7" style="padding-left: 0">
+                            <h4>{{ item.title }}</h4>
+                            <p>{{ item.owner.name }}</p>
+                            <div>
+                            <span>点击：{% if item.stat.view > 10000 %}{{ (item.stat.view / 10000)|int }} 万{% else %}
+                                {{ item.stat.view }}{% endif %}</span>
+                                <span> 弹幕：{{ item.stat.danmaku }}</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-1">
+                    <button class="btn btn-danger delete_bilibili_relate_btn" data-id="{{ item.aid }}"><span
+                            class="glyphicon glyphicon-trash"
+                            style="margin-top: 4.5px;margin-left: -0.5px"></span>
+                    </button>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

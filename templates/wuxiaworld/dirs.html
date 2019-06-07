@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/wuxiaworld/dirs.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/wuxiaworld/dirs.js"></script>
+{% endblock %}
+{% block body %}
+    {#        <div class="col-sm-1"></div>#}
+    {#        <div class="col-sm-8 zhihu-answers">#}
+    {##}
+    {#            #}
+    {#        </div>#}
+    {#        <div class="col-sm-3">#}
+    {#        </div>#}
+    <h2 class="center-block">{{ novel.name }}</h2>
+    <div class="list-group">
+        {% for chapter in novel.chapters %}
+            <li class="list-group-item" onclick="window.open('/module/wuxiaworld/view/ChapterView/render?novel={{ novel.id }}&chapter_id={{ chapter.chapter_id }}')">
+{#                <a href="/module/wuxiaworld/view/ChapterView/render?novel={{ novel.id }}&chapter_id={{ chapter.chapter_id }}"  target="_Blank">{{ chapter.cn }} | {{ chapter.en }}</a>#}
+{#              <a href="/module/wuxiaworld/view/ChapterView/render?novel={{ novel.id }}&chapter_id={{ chapter.chapter_id }}" onclick="window.open('/module/wuxiaworld/view/ChapterView/render?novel={{ novel.id }}&chapter_id={{ chapter.chapter_id }}')" class="list-group-item" target="_Blank">{{ chapter.cn }} | {{ chapter.en }}</a>#}
+              <a href="/module/wuxiaworld/view/ChapterView/render?novel={{ novel.id }}&chapter_id={{ chapter.chapter_id }}" onclick="return false" >{{ chapter.cn }} | {{ chapter.en }}</a>
+            </li>
+        {% endfor %}
+    </div>
+
+{% endblock %}

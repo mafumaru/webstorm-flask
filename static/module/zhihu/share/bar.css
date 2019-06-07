@@ -1,0 +1,15 @@
+.bar .vote {
+  display: inline-block;
+  background: #e5f2ff;
+  color: #3f96ff;
+  border: 1px;
+}
+.bar .shut {
+  display: none;
+  margin-left: 400px;
+}
+@media screen and (max-width: 768px) {
+  .bar .shut {
+    margin-left: 0;
+  }
+}

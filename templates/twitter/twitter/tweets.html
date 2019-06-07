@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/twitter/twitter/twitter.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/twitter/twitter/twitter.js"></script>
+{% endblock %}
+{% block body %}
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+
+            <ul class="list-group list">
+                {% include 'twitter/twitter/tweets_list_content.html' %}
+            </ul>
+        </div>
+        <div class="col-sm-2">
+        </div>
+{% endblock %}

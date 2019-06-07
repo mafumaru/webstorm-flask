@@ -1,0 +1,11 @@
+{% extends 'includes/list_content.html' %}
+{% block list_item %}
+  <li class="list-group-item list_item row">
+    <div class="col-xs-10">
+        {% include list_item.type | rl_list_item_type_filter %}
+    </div>
+    <div class="col-xs-2">
+        <button class="btn btn-danger delete_rl_btn" data-row_name="{{ list_item.row_name }}" data-type="{{ list_item.type }}"><span class="glyphicon glyphicon-trash" style="margin-top: 4.5px;margin-left: -0.5px"></span></button>
+    </div>
+  </li>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% for item in list %}
+    <div class="checkbox col-xs-6 col-md-6">
+        <label>
+            <input type="checkbox" name="frequent_todolist_radio"
+                   value="{{ item.id }}"> {{ item.content }}
+        </label>
+    </div>
+{% endfor %}

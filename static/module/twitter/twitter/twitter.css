@@ -1,0 +1,59 @@
+.content {
+  padding-left: 73px;
+}
+.stream-item-header .js-action-profile-avatar {
+  position: absolute;
+  margin-left: -80px;
+}
+.stream-item-header .username {
+  display: none !important;
+}
+.stream-item-header .ProfileTweet-action--more {
+  display: none;
+}
+.js-tweet-text-container .invisible {
+  display: none;
+}
+.js-tweet-text-container .twitter-timeline-link {
+  color: #1da1f2;
+}
+.js-tweet-text-container s {
+  text-decoration: none !important;
+}
+.js-tweet-text-container .twitter-atreply.pretty-link.js-nav {
+  color: #1da1f2;
+}
+.AdaptiveMediaOuterContainer .AdaptiveMedia-singlePhoto {
+  padding-top: 0 !important;
+}
+.stream-item-footer .ProfileTweet-action--reply {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.stream-item-footer .ProfileTweet-action--retweet {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.stream-item-footer .ProfileTweet-action--favorite {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.stream-item-footer .ProfileTweet-actionList {
+  display: none;
+}
+.self-thread-context {
+  display: none;
+}
+.self-thread-tweet-cta {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .stream-item-header .js-action-profile-avatar {
+    height: 50px;
+    width: 50px;
+    margin-left: -57px;
+  }
+  .content {
+    padding-left: 50px;
+  }
+}

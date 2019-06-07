@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/wuxiaworld/chapter.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/wuxiaworld/chapter.js"></script>
+{% endblock %}
+{% block body %}
+    <div style="margin: 10px">
+        <h2 class="center-block">{{ chapter.book_name.en }} | {{ chapter.book_name.cn }}</h2>
+        <h3 class="center-block">{{ chapter.chapter_name.cn }} | {{ chapter.chapter_name.en }}</h3>
+        <div class="chapter-text" style="margin-bottom: 150px">
+            {% for p in chapter.text.en %}
+                <p class="chapter-cn-p">
+                    <button class="btn btn-sm btn-defalut correct-btn correct-btn-cn" data-pid="{{ loop.index0 }}"
+                            data-type="cn" data-book_name="{{ novel }}" data-chapter_id="{{ chapter.id }}">cn
+                    </button>
+                    {{ chapter.text.cn[loop.index0] |trim }}</p>
+                <p class="cross-p chapter-en-p" data-id="{{ loop.index0 }}">
+                    <button class="btn btn-sm btn-defalut correct-btn" data-pid="{{ loop.index0 }}" data-type="en"
+                            data-book_name="{{ novel }}" data-chapter_id="{{ chapter.id }}">en
+                    </button>
+                    {{ p }}</p>
+            {% endfor %}
+        </div>
+        <nav style="left: 0;right:0;bottom: 36px;position: fixed;margin: 0 auto">
+            <ul class="pager">
+                <li>
+                    <a href="/module/wuxiaworld/view/ChapterView/render?novel={{ novel }}&chapter_id={{ chapter.id - 1 }}">Previous</a>
+                </li>
+                <li>
+                    <a href="/module/wuxiaworld/view/ChapterView/render?novel={{ novel }}&chapter_id={{ chapter.id + 1 }}">Next</a>
+                </li>
+            </ul>
+        </nav>
+{#        <a href="/module/wuxiaworld/view/CommentView/render?novel={{ novel }}&chapter_id={{ chapter.id }}&page=1" target="_Blank"#}
+        <a
+           class="btn btn-danger btn-circle btn-lg" style="left: 10px;bottom: 45px;position: fixed"
+{#           >C</a>#}
+           onclick="window.open('/module/wuxiaworld/view/CommentView/render?novel={{ novel }}&chapter_id={{ chapter.id }}&page=1')">C</a>
+        <a class="btn btn-primary btn-circle btn-lg page-down-btn"  style="right: 10px;bottom: 45px;position: fixed" ><span class="glyphicon glyphicon-menu-down" style="margin-top: 4.5px;margin-left: -0.5px"></span></a>
+    </div>
+{% endblock %}

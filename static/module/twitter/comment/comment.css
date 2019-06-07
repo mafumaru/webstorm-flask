@@ -1,0 +1,15 @@
+.twitter-comment {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.twitter_avatar {
+  width: 48px;
+  height: 48px;
+}
+.twitter-comment-userinfo {
+  margin-left: 55px;
+}
+.twitter-comment-avatar {
+  position: absolute;
+}

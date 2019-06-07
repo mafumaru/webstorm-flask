@@ -1,0 +1,343 @@
+{% extends 'base/base.html' %}
+{% block body %}
+    <a href="/module/bilibili/view/BilibiliRelateView/relates">哔哩哔哩</a>
+
+    <div>
+        <button id="chinese" class="btn btn-warning btn-circle btn-lg" data-toggle="modal" data-target="#chinese_add">C
+        </button>
+    </div>
+
+    <input id="v_file" type="file" onChange="play()"/>
+    <input id="s_file" type="file" onChange="subtitle()"/>
+    <video id="myVideo" controls class="h5_video_player">
+        <source src="" type="video/mp4">
+        <track id="mySubtite" src="" srclang="zh-cn" label="简体中文" kind="subtitles" default>
+    </video>
+    <div class="substitle-area" id="substitle_area" style="position: relative;">
+        <div id="cn" style="min-height: 0px">
+            <div id="jp" style="min-height: 0px"></div>
+            <div id="cn_inner"></div>
+        </div>
+        <div id="en"></div>
+    </div>
+    <div style="width: 100%;height: 500px">
+    </div>
+
+    <script>
+
+        var videoname;
+        function play() {
+            if(videoname){
+                video = document.getElementById(video_id);
+                //DEBUG
+                $.get('/module/wordbase/helper/VideoHelper/set_history_proxy',{video_name:videoname,history:video.currentTime.toString()})
+            }
+
+            var file = document.getElementById('v_file').files[0];
+            videoname = document.getElementById('v_file').files[0].name;
+{#            console.log(filename);#}
+            var url = URL.createObjectURL(file);
+            console.log(url);
+            document.getElementById("myVideo").src = url;
+
+            video = document.getElementById(video_id);
+            $.get('/module/wordbase/helper/VideoHelper/get_history_proxy',{video_name:videoname},function (data) {
+                video.currentTime = parseFloat(data)
+            })
+        }
+        function subtitle() {
+            var file = document.getElementById('s_file').files[0];
+            var url = URL.createObjectURL(file);
+            console.log(url);
+            document.getElementById("mySubtite").src = url;
+            read_file();
+
+        }
+
+        var subtitles;
+        var subtitle_arry = [];
+        var current_subtitle_arry = [];
+        function print(a) {
+            subtitles = a;
+
+            parse_subtitle(subtitles);
+
+            link_subtitle();
+
+            $('#wordbase_upload_byVideo').on('click', function () {
+                var word = $('#wordbase_choose').find('.modal-body .selected_word').text();
+                var word_collection_radio = $('#word_collection_list input[name="word_collection"]:checked');
+                var word_collection_type = word_collection_radio.val();
+
+                var word_type = $('#word_type_list input[name="word_type"]:checked').val();
+                var group = $('#group_list input[name="group"]:checked').val();
+
+                var word_id_radio = $('#wb_search_ input[name="word_id"]:checked');
+                var word_id = word_id_radio.val();
+                var wordset_id = $('#wb_search_ input[name="wordset_id"]:checked').val();
+
+                params = {
+                    add_type: '',
+                    word: word,
+                    collection: word_collection_type,
+                    word_type: word_type,
+                    group: group,
+                    word_id: word_id,  //
+                    wordset_id: wordset_id,
+                    start:prev_subtitle(),
+                    end:next_subtitle().end_time,
+                    name:videoname
+                };
+                if (!word_id && !wordset_id) {
+                    params.add_type = 'first'
+                } else if (word_id_radio && word_id_radio.data('type') === 'word') {
+                    params.add_type = 'wordlang';
+                    params.word_type = 'word';
+                    params.wordset_id = word_id_radio.data('wordset_id');
+                } else if (wordset_id) {
+                    params.word_type = 'word';
+                    params.add_type = 'word';
+                    params.word_id = '';
+                } else {
+                    params.add_type = 'wordlang'
+                }
+
+                $.post('/module/wordbase/video/VideoWordbase/add_word', params, function (data) {
+
+                });
+            });
+        }
+        function read_file() {
+            var files = $('#s_file').prop('files');//获取到文件列表
+            subtitle_arry = [];
+            current_subtitle_arry = [];
+            var jp_text_box = $('#substitle_area #jp');
+            var cn_text_box = $('#substitle_area #cn_inner');
+            var en_text_box = $('#substitle_area #en');
+            jp_text_box.html('');
+            cn_text_box.html('');
+            en_text_box.html('');
+            if (files.length == 0) {
+                alert('请选择文件');
+            } else {
+                var reader = new FileReader();//新建一个FileReader
+                reader.readAsText(files[0], "UTF-8");//读取文件
+                reader.onload = function (evt) { //读取完文件之后会回来这里
+                    var fileString = evt.target.result;
+                    print(fileString);
+                };
+            }
+        }
+
+        function parse_subtitle(subtitles) {
+            subtitle_arry = [];
+            current_subtitle_arry = [];
+            var subtitle_temp_arry = subtitles.split("\r\n\r\n");
+            for (i in subtitle_temp_arry) {
+                if (subtitle_temp_arry[i]) {
+                    var line = subtitle_temp_arry[i].split('\n');
+                    var time = line[1].split('-->');
+                    var start_time_arry = time[0].split(",");
+                    var start_clock = start_time_arry[0].split(':');
+                    var start_time = parseFloat(start_clock[2] + '.' + start_time_arry[1].trim()) + parseInt(start_clock[1]) * 60 + parseInt(start_clock[0]) * 60 * 60;
+                    var end_time_arry = time[1].split(",");
+                    var end_clock = end_time_arry[0].split(':');
+                    var end_time = parseFloat(end_clock[2] + '.' + end_time_arry[1].trim()) + parseInt(end_clock[1]) * 60 + parseInt(end_clock[0]) * 60 * 60;
+                    if (line.length == 3) {
+                        var text = line[2]
+                    } else if (line.length == 4) {
+                        var text = line[2] + '\n' + line[3]
+                    } else if (line.length == 5) {
+                        var text = line[2] + '\n' + line[3] + '\n' + line[4]
+                    }
+                    var subtitle_object = {
+                        start_time: start_time,
+                        end_time: end_time,
+                        text: text,
+                        {#                    has_shown:false#}
+                    };
+
+                    subtitle_arry.push(subtitle_object);
+                }
+            }
+        }
+        var video;
+        var video_id = "myVideo";
+        var X = document.getElementById('en').getBoundingClientRect().top;
+        var Y = 0;
+
+        function RndNum(n) {
+            var rnd = "";
+            for (var i = 0; i < n; i++)
+                rnd += Math.floor(Math.random() * 10);
+            return rnd;
+        }
+        window.onbeforeunload = function (e) {
+{#            var e = window.event || e;#}
+{#            e.returnValue = ("确定离开当前页面吗？");#}
+            video = document.getElementById(video_id);
+            //DEBUG
+            $.get('/module/wordbase/helper/VideoHelper/set_history_proxy',{video_name:videoname,history:video.currentTime.toString()})
+
+        } ;
+
+        function link_subtitle() {
+            video = document.getElementById(video_id);
+            for(t in subtitle_arry){
+                if(subtitle_arry[t].text.indexOf('<<')!=-1){
+                    var text_area = $('#substitle_area');
+                    text_area.css({'margin-top': -98});
+                    var m = parseInt(text_area.css('margin-top'), 10);
+                    var sub_num = parseInt(subtitle_arry[t].text.substring(2,3));
+                    text_area.css({'margin-top': (m - 42*sub_num)});
+                    break
+                }
+            }
+            video.ontimeupdate = function (e) {
+                var flag = RndNum(5);
+                for (var j = 0; j < current_subtitle_arry.length; j++) {
+                    if (this.currentTime + 0.5 < subtitle_arry[current_subtitle_arry[j]].start_time || this.currentTime + 0.5 >= subtitle_arry[current_subtitle_arry[j]].end_time) {
+
+
+                        $('#substitle_area p[id=' + current_subtitle_arry[j] + ']').remove();
+                        current_subtitle_arry.splice(j, 1);
+                        j--;
+                    }
+                }
+                for (i in subtitle_arry) {
+                    if (this.currentTime + 0.5 >= subtitle_arry[i].start_time && this.currentTime + 0.5 < subtitle_arry[i].end_time) {
+                        if (current_subtitle_arry.indexOf(i) == -1) {
+                            var subtitle_line = '<p class="subtitle-css text-center" style="margin-bottom: 0" id="' + i + '">' + subtitle_arry[i].text + '</p>';
+
+                            if (/[\u0800-\u4e00]+/.test(subtitle_arry[i].text)) {
+                                var text_box = $('#substitle_area #jp');
+                                text_box.append(subtitle_line);
+                                if (text_box.css('min-height') == '0px') {
+                                    var height = text_box.height();
+                                    text_box.css({'min-height': height});
+                                }
+                            } else if (/[\u4E00-\u9FA5]+/.test(subtitle_arry[i].text)) {
+                                var text_box = $('#substitle_area #cn');
+                                var inner_text_box = $('#substitle_area #cn_inner');
+                                inner_text_box.append(subtitle_line);
+                                var jp_text_box = $('#substitle_area #jp');
+                                if(jp_text_box.children('p').length==0){
+                                    jp_text_box.css({'min-height': 0});
+                                }else if(jp_text_box.children('p').length==1){
+                                    jp_text_box.css({'min-height': 42});
+                                }
+
+                                var jp_height = parseInt(jp_text_box.css('min-height'), 10);
+                                var height = text_box.height();
+                                var inner_height = inner_text_box.height();
+                                if(inner_text_box.children('p').length==1){
+                                    text_box.css({'min-height': inner_height+jp_height});
+                                }
+                                if (parseInt(text_box.css('min-height'), 10) < height) {
+                                      text_box.css({'min-height': inner_height+jp_height});
+                                }
+                            } else {
+                                var text_box = $('#substitle_area #en');
+                                text_box.append(subtitle_line);
+                            }
+
+
+                            current_subtitle_arry.push(i);
+                        }
+                    } else if (this.currentTime + 0.5 < subtitle_arry[i].start_time) {
+                        break
+                    }
+                }
+            }
+        }
+
+        function prev_subtitle() {
+            video = document.getElementById(video_id);
+            for (i in subtitle_arry) {
+                if (video.currentTime >= subtitle_arry[i].start_time && video.currentTime < subtitle_arry[i].end_time) {
+                    if (current_subtitle_arry.indexOf(i - 1) == -1) {
+                        if (i == 0) {
+                            var prev_subtitle_time = subtitle_arry[i].start_time
+                        } else if(subtitle_arry[i].start_time-subtitle_arry[i-1].start_time>=0.35){
+                            var prev_subtitle_time = subtitle_arry[i - 1].start_time
+                        }else {
+                            continue
+                        }
+                        return prev_subtitle_time
+                    }
+                }
+            }
+        }
+
+        function next_subtitle() {
+            video = document.getElementById(video_id);
+            for (i in subtitle_arry) {
+                if (i == subtitle_arry.length - 1) {
+                    return subtitle_arry[i]
+                }
+                if (video.currentTime < subtitle_arry[i].start_time && subtitle_arry[i].start_time-subtitle_arry[i-1].start_time>=0.35) {
+                    return subtitle_arry[i]
+                }
+            }
+        }
+
+        document.onkeydown = function (e) {
+            var video = document.getElementById("myVideo");
+            if (e.which == 37) {
+                var prev = prev_subtitle();
+                video.currentTime = prev;
+            } else if (e.which == 39) {
+                video.currentTime = next_subtitle().start_time
+            }
+        };
+
+
+    </script>
+
+    <div class="modal fade" id="chinese_add" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Chinese Add</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="chinese_word" placeholder="词">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" id="chinese_explanation"
+                                      placeholder="说明"></textarea>
+                        </div>
+                    </form>
+                    <form class="form-inline">
+                        <div class="row" id="chinese_colletion_list">
+                            <div class="radio col-xs-4 col-md-3">
+                                <label>
+                                    <input type="radio" name="chinese_colletion"
+                                           value="foreign"> 外来词
+                                </label>
+                            </div>
+                            <div class="radio col-xs-4 col-md-3">
+                                <label>
+                                    <input type="radio" name="chinese_colletion"
+                                           value="source"> 词源
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="chinese_upload" data-dismiss="modal">收录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="/static/core/css/index.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/core/js/index.js"></script>
+{% endblock %}

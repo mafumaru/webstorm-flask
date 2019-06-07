@@ -1,0 +1,22 @@
+.d_author {
+  position: absolute;
+  margin-left: -40px;
+}
+.d_post_content_main {
+  margin-left: 130px;
+}
+ul {
+  list-style-type: none;
+}
+.j_lzl_container {
+  display: none;
+}
+a .tail-info {
+  display: none ;
+}
+.list_item {
+  min-height: 200px;
+}
+img {
+  display: inline-block !important;
+}

@@ -1,0 +1,47 @@
+<div>
+    <div class="author">
+        <div class="twitter-comment-avatar">
+            <a href="https://twitter.com/{{ list_item.uid }}"><img class="img-circle img-responsive twitter_avatar" src="{{ list_item.avatar }}"></a>
+        </div>
+        <div class="twitter-comment-userinfo">
+            <div>
+                <span style="font-size: 14px;font-weight: bold">{{ list_item.fullname }}</span><span
+                    style="color: #666;font-size: 14px">@{{ list_item.uid }} · {{ list_item.date }}</span>
+            </div>
+            <div class="twitter-comment">
+                <p>{{ list_item.content }}</p>
+            </div>
+            {% if list_item.commment_type == 'conversation' %}
+                {% for reply in list_item.reply %}
+                    <div class="author" style="margin-left: 20px">
+                        <div class="twitter-comment-avatar">
+                            <a href="https://twitter.com/{{ reply.uid }}"><img class="img-circle img-responsive twitter_avatar"
+                                                                                   src="{{ reply.avatar }}"></a>
+                        </div>
+                        <div class="twitter-comment-userinfo">
+                            <div>
+                                回复{{ reply.reply_to }}
+                            </div>
+                            <div>
+                                <span style="font-size: 14px;font-weight: bold">{{ reply.fullname }}</span><span
+                                    style="color: #666;font-size: 14px">@{{ list_item.uid }} · {{ reply.date }}</span>
+                            </div>
+                            <div class="twitter-comment">
+                                <p>{{ reply.content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    {% if base.collection.type =='twitter_comment' %}
+        <div class="twitter_comment-bar">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#collection_choose"
+                    data-type="{{ base.collection.type }}" data-table_name="{{ base.collection.table_name }}"
+                    data-id="{{ list_item.id }}">收藏
+            </button>
+        </div>
+    {% endif %}
+</div>

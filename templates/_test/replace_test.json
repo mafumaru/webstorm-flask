@@ -1,0 +1,428 @@
+{
+  "title": {
+    "simpleText": "Reaper Training with SARSA Reinforcement Learning"
+  },
+  "viewCount": {
+    "videoViewCountRenderer": {
+      "viewCount": {
+        "simpleText": "250次观看"
+      },
+      "shortViewCount": {
+        "simpleText": "250次观看"
+      }
+    }
+  },
+  "videoActions": {
+    "menuRenderer": {
+      "items": [
+        {
+          "menuNavigationItemRenderer": {
+            "text": {
+              "simpleText": "举报"
+            },
+            "icon": {
+              "iconType": "FLAG"
+            },
+            "navigationEndpoint": {
+              "clickTrackingParams": "CFsQzKsBGAAiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+              "commandMetadata": {
+                "webCommandMetadata": {
+                  "ignoreNavigation": True
+                }
+              },
+              "modalEndpoint": {
+                "modal": {
+                  "modalWithTitleAndButtonRenderer": {
+                    "title": {
+                      "simpleText": "要举报此视频？"
+                    },
+                    "content": {
+                      "simpleText": "需先登录，才能举报不当内容。"
+                    },
+                    "button": {
+                      "buttonRenderer": {
+                        "style": "STYLE_BRAND",
+                        "size": "SIZE_DEFAULT",
+                        "isDisabled": false,
+                        "text": {
+                          "simpleText": "登录"
+                        },
+                        "navigationEndpoint": {
+                          "clickTrackingParams": "CGQQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                          "commandMetadata": {
+                            "webCommandMetadata": {
+                              "url": "https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252Fwatch%253Fv%253DpRjAfs4bJDI%26hl%3Dzh-CN%26app%3Ddesktop%26action_handle_signin%3Dtrue&hl=zh-CN&passive=true&service=youtube&uilel=3"
+                            }
+                          },
+                          "signInEndpoint": {
+                            "hack": True
+                          }
+                        },
+                        "trackingParams": "CGQQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0="
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "trackingParams": "CFsQzKsBGAAiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0="
+          }
+        },
+        {
+          "menuNavigationItemRenderer": {
+            "text": {
+              "simpleText": "添加翻译"
+            },
+            "navigationEndpoint": {
+              "clickTrackingParams": "CFsQzKsBGAAiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+              "commandMetadata": {
+                "webCommandMetadata": {
+                  "url": "/timedtext_video?bl=watch&v=pRjAfs4bJDI&ref=wt&auto=yes"
+                }
+              },
+              "urlEndpoint": {
+                "url": "/timedtext_video?bl=watch&v=pRjAfs4bJDI&ref=wt&auto=yes"
+              }
+            },
+            "trackingParams": "CFsQzKsBGAAiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0="
+          }
+        }
+      ],
+      "trackingParams": "CFsQzKsBGAAiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+      "topLevelButtons": [
+        {
+          "toggleButtonRenderer": {
+            "style": {
+              "styleType": "STYLE_TEXT"
+            },
+            "isToggled": false,
+            "isDisabled": false,
+            "defaultIcon": {
+              "iconType": "LIKE"
+            },
+            "defaultText": {
+              "accessibility": {
+                "accessibilityData": {
+                  "label": "15 人顶过"
+                }
+              },
+              "simpleText": "15"
+            },
+            "toggledText": {
+              "accessibility": {
+                "accessibilityData": {
+                  "label": "16 人顶过"
+                }
+              },
+              "simpleText": "16"
+            },
+            "accessibility": {
+              "label": "与另外 15 人一起顶此视频"
+            },
+            "trackingParams": "CGIQmE0YAiITCOH0p7HG2N0CFQMKYAodniQCjij4HQ==",
+            "defaultTooltip": "顶一下",
+            "toggledTooltip": "取消顶",
+            "toggledStyle": {
+              "styleType": "STYLE_DEFAULT_ACTIVE"
+            },
+            "defaultNavigationEndpoint": {
+              "clickTrackingParams": "CGIQmE0YAiITCOH0p7HG2N0CFQMKYAodniQCjij4HQ==",
+              "commandMetadata": {
+                "webCommandMetadata": {
+                  "ignoreNavigation": True
+                }
+              },
+              "modalEndpoint": {
+                "modal": {
+                  "modalWithTitleAndButtonRenderer": {
+                    "title": {
+                      "simpleText": "喜欢此视频？"
+                    },
+                    "content": {
+                      "simpleText": "需先登录，才能发表您的看法。"
+                    },
+                    "button": {
+                      "buttonRenderer": {
+                        "style": "STYLE_BLUE_TEXT",
+                        "size": "SIZE_DEFAULT",
+                        "isDisabled": false,
+                        "text": {
+                          "simpleText": "登录"
+                        },
+                        "navigationEndpoint": {
+                          "clickTrackingParams": "CGMQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                          "commandMetadata": {
+                            "webCommandMetadata": {
+                              "url": "https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252Fwatch%253Fv%253DpRjAfs4bJDI%26hl%3Dzh-CN%26app%3Ddesktop%26action_handle_signin%3Dtrue&hl=zh-CN&passive=true&service=youtube&uilel=3"
+                            }
+                          },
+                          "signInEndpoint": {
+                            "nextEndpoint": {
+                              "clickTrackingParams": "CGMQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/watch?v=pRjAfs4bJDI",
+                                  "webPageType": "WEB_PAGE_TYPE_WATCH"
+                                }
+                              },
+                              "watchEndpoint": {
+                                "videoId": "pRjAfs4bJDI"
+                              }
+                            }
+                          }
+                        },
+                        "trackingParams": "CGMQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0="
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "accessibilityData": {
+              "accessibilityData": {
+                "label": "与另外 15 人一起顶此视频"
+              }
+            },
+            "toggleButtonSupportedData": {
+              "toggleButtonIdData": {
+                "id": "TOGGLE_BUTTON_ID_TYPE_LIKE"
+              }
+            }
+          }
+        },
+        {
+          "toggleButtonRenderer": {
+            "style": {
+              "styleType": "STYLE_TEXT"
+            },
+            "isToggled": false,
+            "isDisabled": false,
+            "defaultIcon": {
+              "iconType": "DISLIKE"
+            },
+            "defaultText": {
+              "accessibility": {
+                "accessibilityData": {
+                  "label": "没人踩"
+                }
+              },
+              "simpleText": "0"
+            },
+            "toggledText": {
+              "accessibility": {
+                "accessibilityData": {
+                  "label": "1 人踩"
+                }
+              },
+              "simpleText": "1"
+            },
+            "accessibility": {
+              "label": "与另外 0 人一起踩此视频"
+            },
+            "trackingParams": "CGAQmE0YAyITCOH0p7HG2N0CFQMKYAodniQCjij4HQ==",
+            "defaultTooltip": "踩一下",
+            "toggledTooltip": "踩一下",
+            "toggledStyle": {
+              "styleType": "STYLE_DEFAULT_ACTIVE"
+            },
+            "defaultNavigationEndpoint": {
+              "clickTrackingParams": "CGAQmE0YAyITCOH0p7HG2N0CFQMKYAodniQCjij4HQ==",
+              "commandMetadata": {
+                "webCommandMetadata": {
+                  "ignoreNavigation": True
+                }
+              },
+              "modalEndpoint": {
+                "modal": {
+                  "modalWithTitleAndButtonRenderer": {
+                    "title": {
+                      "simpleText": "不喜欢此视频？"
+                    },
+                    "content": {
+                      "simpleText": "需先登录，才能发表您的看法。"
+                    },
+                    "button": {
+                      "buttonRenderer": {
+                        "style": "STYLE_BLUE_TEXT",
+                        "size": "SIZE_DEFAULT",
+                        "isDisabled": false,
+                        "text": {
+                          "simpleText": "登录"
+                        },
+                        "navigationEndpoint": {
+                          "clickTrackingParams": "CGEQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                          "commandMetadata": {
+                            "webCommandMetadata": {
+                              "url": "https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252Fwatch%253Fv%253DpRjAfs4bJDI%26hl%3Dzh-CN%26app%3Ddesktop%26action_handle_signin%3Dtrue&hl=zh-CN&passive=true&service=youtube&uilel=3"
+                            }
+                          },
+                          "signInEndpoint": {
+                            "nextEndpoint": {
+                              "clickTrackingParams": "CGEQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/watch?v=pRjAfs4bJDI",
+                                  "webPageType": "WEB_PAGE_TYPE_WATCH"
+                                }
+                              },
+                              "watchEndpoint": {
+                                "videoId": "pRjAfs4bJDI"
+                              }
+                            }
+                          }
+                        },
+                        "trackingParams": "CGEQ8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0="
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "accessibilityData": {
+              "accessibilityData": {
+                "label": "与另外 0 人一起踩此视频"
+              }
+            },
+            "toggleButtonSupportedData": {
+              "toggleButtonIdData": {
+                "id": "TOGGLE_BUTTON_ID_TYPE_DISLIKE"
+              }
+            }
+          }
+        },
+        {
+          "buttonRenderer": {
+            "style": "STYLE_DEFAULT",
+            "size": "SIZE_DEFAULT",
+            "isDisabled": false,
+            "text": {
+              "simpleText": "分享"
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CF4Q8FsYBCITCOH0p7HG2N0CFQMKYAodniQCjij4HQ==",
+              "commandMetadata": {
+                "webCommandMetadata": {
+                  "url": "/service_ajax",
+                  "sendPost": True
+                }
+              },
+              "shareEntityServiceEndpoint": {
+                "serializedShareEntity": "CgtwUmpBZnM0YkpESQ%3D%3D",
+                "commands": [
+                  {
+                    "openPopupAction": {
+                      "popup": {
+                        "unifiedSharePanelRenderer": {
+                          "trackingParams": "CF8QjmIiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                          "showLoadingSpinner": True
+                        }
+                      },
+                      "popupType": "DIALOG",
+                      "beReused": True
+                    }
+                  }
+                ]
+              }
+            },
+            "icon": {
+              "iconType": "SHARE"
+            },
+            "accessibility": {
+              "label": "分享"
+            },
+            "tooltip": "分享",
+            "trackingParams": "CF4Q8FsYBCITCOH0p7HG2N0CFQMKYAodniQCjij4HQ=="
+          }
+        },
+        {
+          "buttonRenderer": {
+            "style": "STYLE_DEFAULT",
+            "size": "SIZE_DEFAULT",
+            "isDisabled": false,
+            "icon": {
+              "iconType": "PLAYLIST_ADD"
+            },
+            "navigationEndpoint": {
+              "clickTrackingParams": "CFwQ8FsYBSITCOH0p7HG2N0CFQMKYAodniQCjij4HQ==",
+              "commandMetadata": {
+                "webCommandMetadata": {
+                  "ignoreNavigation": True
+                }
+              },
+              "modalEndpoint": {
+                "modal": {
+                  "modalWithTitleAndButtonRenderer": {
+                    "title": {
+                      "simpleText": "想稍后再观看此视频？"
+                    },
+                    "content": {
+                      "simpleText": "请先登录，然后将此视频添加至播放列表。"
+                    },
+                    "button": {
+                      "buttonRenderer": {
+                        "style": "STYLE_BLUE_TEXT",
+                        "size": "SIZE_DEFAULT",
+                        "isDisabled": false,
+                        "text": {
+                          "simpleText": "登录"
+                        },
+                        "navigationEndpoint": {
+                          "clickTrackingParams": "CF0Q8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                          "commandMetadata": {
+                            "webCommandMetadata": {
+                              "url": "https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252Fwatch%253Fv%253DpRjAfs4bJDI%26hl%3Dzh-CN%26app%3Ddesktop%26action_handle_signin%3Dtrue&hl=zh-CN&passive=true&service=youtube&uilel=3"
+                            }
+                          },
+                          "signInEndpoint": {
+                            "nextEndpoint": {
+                              "clickTrackingParams": "CF0Q8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/watch?v=pRjAfs4bJDI",
+                                  "webPageType": "WEB_PAGE_TYPE_WATCH"
+                                }
+                              },
+                              "watchEndpoint": {
+                                "videoId": "pRjAfs4bJDI"
+                              }
+                            }
+                          }
+                        },
+                        "trackingParams": "CF0Q8FsiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0="
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "accessibility": {
+              "label": "保存到"
+            },
+            "tooltip": "保存到",
+            "trackingParams": "CFwQ8FsYBSITCOH0p7HG2N0CFQMKYAodniQCjij4HQ==",
+            "accessibilityData": {
+              "accessibilityData": {
+                "label": "保存到"
+              }
+            }
+          }
+        }
+      ],
+      "accessibility": {
+        "accessibilityData": {
+          "label": "其他操作"
+        }
+      }
+    }
+  },
+  "trackingParams": "CFsQzKsBGAAiEwjh9KexxtjdAhUDCmAKHZ4kAo4o-B0=",
+  "sentimentBar": {
+    "sentimentBarRenderer": {
+      "percentIfIndifferent": 100,
+      "percentIfLiked": 100,
+      "percentIfDisliked": 93,
+      "likeStatus": "INDIFFERENT",
+      "tooltip": "15 / 0"
+    }
+  }
+}

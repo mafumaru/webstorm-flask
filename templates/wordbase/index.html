@@ -1,0 +1,154 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/wordbase/wordbase.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/wordbase/wb_index.js"></script>
+{% endblock %}
+{% block body %}
+{#    <button class="btn btn-default btn-circle btn-lg" data-toggle="modal" data-target="#"><span#}
+{#            class="glyphicon glyphicon-plus"></span>#}
+{#    </button>#}
+
+    <div class="input-group">
+        <div class="input-group-btn">
+            <button class="btn btn-default" data-toggle="modal" data-target="#wordbase_pure_add"><span
+                    class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+        <input type="text" class="form-control" id="wordbase_pure_add_search_input">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="wb_index_search_v" href="javascipt:void(0);">zh</a></li>
+                <li><a class="wb_index_search_v" href="javascipt:void(0);">jp</a></li>
+                <li><a class="wb_index_search_v" href="javascipt:void(0);">en</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="list-group">
+        <li class="list-group-item" onclick="window.open('/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=wordbase_collection&condition_value=regular')">
+            <a href="/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=wordbase_collection&condition_value=regular" onclick="return false">Regular</a>
+        </li>
+        <li class="list-group-item" onclick="window.open('/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=wordbase_collection&condition_value=fresh')">
+            <a href="/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=wordbase_collection&condition_value=fresh" onclick="return false">Fresh</a>
+        </li>
+        <li class="list-group-item" onclick="window.open('/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=wordbase_collection&condition_value=fun')">
+            <a href="/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=wordbase_collection&condition_value=fun" onclick="return false">Fun</a>
+        </li>
+{#        <li class="list-group-item" onclick="window.open('/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=word_type&condition_value=expression')">#}
+{#            <a href="" onclick="return false">Expression</a>#}
+{#        </li>#}
+{#        <li class="list-group-item" onclick="window.open('')">#}
+{#            <a href="" onclick="return false">Sentence</a>#}
+{#        </li>#}
+{#        <li class="list-group-item" onclick="window.open('')">#}
+{#            <a href="" onclick="return false">Date</a>#}
+{#        </li>#}
+        {% for group in groups %}
+            <li class="list-group-item"
+                onclick="window.open('/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=group&condition_value={{ group.group_name}}')">
+                <a href="/module/wordbase/view/WordbaseView/wordbase_detail?condition_type=group&condition_value={{ group.group_name}}" onclick="return false">{{ group.group_name}}</a>
+            </li>
+        {% endfor %}
+
+    </div>
+
+     <div class="modal fade" id="wordbase_pure_add" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Word Base Pure Add</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="pure_add_cn">CN</label>
+                            <input type="text" class="form-control" id="pure_add_cn" >
+                        </div>
+                        <div class="form-group">
+                            <label for="pure_add_en">ENG</label>
+                            <input type="email" class="form-control" id="pure_add_en">
+                        </div>
+                        <div class="form-group">
+                            <label for="pure_add_jp">JP</label>
+                            <input type="email" class="form-control" id="pure_add_jp">
+                        </div>
+                    </form>
+                    <form class="form-inline">
+                        <div class="row" id="pure_add_word_collection_list">
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="word_collection"
+                                           value="fresh"> Fresh Word
+                                </label>
+                            </div>
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="word_collection"
+                                           value="regular"> Daily Regular
+                                </label>
+                            </div>
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="word_collection"
+                                           value="fun"> Funny word
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <form class="form-inline">
+                        <div class="row" id="pure_add_word_type_list">
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="word_type"
+                                           value="sentence"> Sentence
+                                </label>
+                            </div>
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="word_type"
+                                           value="expression"> Expression
+                                </label>
+                            </div>
+                            <div class="radio col-xs-6 col-md-3">
+                                <label>
+                                    <input type="radio" name="word_type"
+                                           value="wordset"> wordset
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <form class="form-inline">
+                        <div class="row" id="pure_add_group_list">
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="wb_pure_add_group_delete"><span
+                                        class="glyphicon glyphicon-minus"></span></button>
+                            </div>
+                            <input type="text" class="form-control" id="wb_pure_add_group_input">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="wb_pure_add_group_add"><span
+                                        class="glyphicon glyphicon-plus"></span></button>
+                                <button class="btn btn-danger" id="wb_pure_add" data-dismiss="modal">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

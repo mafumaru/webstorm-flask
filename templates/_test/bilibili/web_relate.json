@@ -1,0 +1,995 @@
+{
+  "aid": "43243076",
+  "p": "",
+  "videoData": {
+    "aid": 43243076,
+    "videos": 2,
+    "tid": 17,
+    "tname": "单机游戏",
+    "copyright": 1,
+    "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F8c3e0d5ddc6b24d9cadc8f766018b1938367e4dd.jpg",
+    "title": "用Minecraft的方式打开『刀剑神域Alicization』",
+    "pubdate": 1549886983,
+    "ctime": 1549886983,
+    "desc": "久等了，历时三个月的坑至此结束，感谢所有参加制作的人员和一直支持的大家！\n用Minecraft的方式打开『刀剑神域Alicization』！细致还原原作的内容，使用全动画制作。\n\n如果你喜欢这个视频，请给予我们投币\u002F点赞\u002F转发\u002F评论\u002F弹幕，让更多的人看到我们的作品！\n\n建筑: 大绿葱 爱德蒙 疾风 jongtong LittleFalse \n建筑协力: 七钻 小P 呆毛 枫叶 Carlely wxffxx\n模型: 哥斯拉 时雨 夏小K\n皮肤: Thorn_Arnor\n地形:Lsl 像素绘画: 小鱼\n字体提供: Seekladoom\n动画\u002F合成: 发条Q",
+    "state": 0,
+    "attribute": 16768,
+    "duration": 182,
+    "rights": {
+      "bp": 0,
+      "elec": 0,
+      "download": 1,
+      "movie": 0,
+      "pay": 0,
+      "hd5": 1,
+      "no_reprint": 1,
+      "autoplay": 1,
+      "ugc_pay": 0,
+      "is_cooperation": 0
+    },
+    "owner": {
+      "mid": 1742626,
+      "name": "Noble团队",
+      "face": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Fface\u002Fdfb3328b517b628a80c93e2b2d705edb8aa76704.jpg"
+    },
+    "stat": {
+      "aid": 43243076,
+      "view": "--",
+      "danmaku": "--",
+      "reply": 1568,
+      "favorite": "--",
+      "coin": "--",
+      "share": "--",
+      "now_rank": 0,
+      "his_rank": 0,
+      "like": "--",
+      "dislike": 0
+    },
+    "dynamic": "#我的世界##Minecraft##刀剑神域#\n刀剑如光，闪耀如钻！桐人姥爷又双叒叕方了！",
+    "cid": 75802805,
+    "dimension": {
+      "width": 1920,
+      "height": 1080,
+      "rotate": 0
+    },
+    "no_cache": false,
+    "pages": [
+      {
+        "cid": 75802805,
+        "page": 1,
+        "from": "vupload",
+        "part": "正片",
+        "duration": 91,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        }
+      },
+      {
+        "cid": 75802884,
+        "page": 2,
+        "from": "vupload",
+        "part": "迷之对比版",
+        "duration": 91,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        }
+      }
+    ],
+    "subtitle": {
+      "allow_submit": true,
+      "list": []
+    },
+    "embedPlayer": "EmbedPlayer(\"player\", \"\u002F\u002Fs1.hdslb.com\u002Fbfs\u002Fstatic\u002Fplayer\u002Fmain\u002Fflash\u002Fplay.swf\", \"cid=75802805&aid=43243076&pre_ad=\")"
+  },
+  "upData": {
+    "mid": "1742626",
+    "name": "Noble团队",
+    "approve": false,
+    "sex": "男",
+    "rank": "10000",
+    "face": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Fface\u002Fdfb3328b517b628a80c93e2b2d705edb8aa76704.jpg",
+    "DisplayRank": "0",
+    "regtime": 0,
+    "spacesta": 0,
+    "birthday": "",
+    "place": "",
+    "description": "",
+    "article": 0,
+    "attentions": [],
+    "fans": 59740,
+    "friend": 39,
+    "attention": 39,
+    "sign": "Minecraft短片制作 粉丝群:167954106",
+    "level_info": {
+      "current_level": 6,
+      "current_min": 0,
+      "current_exp": 0,
+      "next_exp": 0
+    },
+    "pendant": {
+      "pid": 0,
+      "name": "",
+      "image": "",
+      "expire": 0
+    },
+    "nameplate": {
+      "nid": 8,
+      "name": "知名偶像",
+      "image": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Fface\u002F27a952195555e64508310e366b3e38bd4cd143fc.png",
+      "image_small": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Fface\u002F0497be49e08357bf05bca56e33a0637a273a7610.png",
+      "level": "稀有勋章",
+      "condition": "所有自制视频总播放数\u003E=100万"
+    },
+    "Official": {
+      "role": 0,
+      "title": "",
+      "desc": ""
+    },
+    "official_verify": {
+      "type": -1,
+      "desc": ""
+    },
+    "vip": {
+      "vipType": 2,
+      "dueRemark": "",
+      "accessStatus": 0,
+      "vipStatus": 1,
+      "vipStatusWarn": ""
+    },
+    "archiveCount": 171
+  },
+  "tags": [
+    {
+      "tag_id": 17683,
+      "tag_name": "单机游戏",
+      "cover": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F325212cab74a3c57632f3c9a3a3acb9671616a99.jpg",
+      "head_cover": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002Fdce991bba19a4220883c172506e8f27220eddcc3.jpg",
+      "content": "以所有平台（PC、主机、移动端）的单机或联机游戏为主的视频内容，包括游戏预告、CG、实况解说及相关的评测、杂谈等",
+      "short_content": "我知道你曾是一个冒险家",
+      "type": 3,
+      "state": 0,
+      "ctime": 1436866637,
+      "count": {
+        "view": 0,
+        "use": 1201517,
+        "atten": 431861
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 47988,
+      "tag_name": "我的世界",
+      "cover": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F2baa938d85ba419e0c6a6da9e14cd4cd27fb977e.jpg",
+      "head_cover": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F4ee35ed657641b7db26acf3699d9813266f4b353.png",
+      "content": "《我的世界》是一款风靡全球的高自由度沙盒游戏，由瑞典Mojang AB和4J Studios开发。",
+      "short_content": "要致富，先撸树。",
+      "type": 3,
+      "state": 0,
+      "ctime": 1436866637,
+      "count": {
+        "view": 0,
+        "use": 377983,
+        "atten": 189104
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 2483870,
+      "tag_name": "Minecraft",
+      "cover": "",
+      "head_cover": "",
+      "content": "",
+      "short_content": "",
+      "type": 1,
+      "state": 0,
+      "ctime": 1470761389,
+      "count": {
+        "view": 0,
+        "use": 68330,
+        "atten": 6713
+      },
+      "is_atten": 0,
+      "likes": 2,
+      "hates": 1,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 29603,
+      "tag_name": "刀剑神域",
+      "cover": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Ftag\u002Ff3b35a23474b88b4c77bb6af6be25edaed82a79a.jpg",
+      "head_cover": "",
+      "content": "桐谷和人是使用世界首款完全潜行游戏“Sword Art Online 刀剑神域”的玩家。参与过封闭测试，并买下正式版的和人，正准备体验游戏的第一次正式营运。但在登入后不久，和人发现“登出”指令竟然消失，同时自称是SAO游戏设计者“茅场晶彦”的人淡淡开始说明，无法完成攻略就无法离开游戏，只有打倒位于第100层的头目－达成“完全攻略”－才是离开这个世界唯一的方法。并且，在游戏内GAME OVER或是尝试脱下NERvGear，玩家会立刻被NERvGear发出的高频率微波破坏脑部而死亡。唯有接受这个矛盾事实的人，才能够存活下去。\n被卷入其中的桐人，在巨大浮游城堡“艾恩葛朗特”里，以不与人组队的独行剑士身份，逐渐崭露头角，并获得“黑色剑士”的称号，以完全攻略的条件为目标，持续进行严酷的冒险，在这期间他邂逅了女性细剑使——“闪光”亚丝娜和公会“血盟骑士团团长”希兹克利夫，他的命运也一步步产生了巨大的变化。桐人能否从游戏里全身而退…\n《刀剑神域》Sword Art Online是川原砾著作，abec插画的日本轻小说作品，由电击文库于出版发行。动画由A-1 Pictures制作，2012年7月放送。",
+      "short_content": "",
+      "type": 3,
+      "state": 0,
+      "ctime": 1436866637,
+      "count": {
+        "view": 0,
+        "use": 52786,
+        "atten": 107370
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 164146,
+      "tag_name": "桐人",
+      "cover": "",
+      "head_cover": "",
+      "content": "",
+      "short_content": "",
+      "type": 3,
+      "state": 0,
+      "ctime": 1436866637,
+      "count": {
+        "view": 0,
+        "use": 24828,
+        "atten": 1777
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 29605,
+      "tag_name": "SAO",
+      "cover": "",
+      "head_cover": "",
+      "content": "",
+      "short_content": "",
+      "type": 0,
+      "state": 0,
+      "ctime": 1436866637,
+      "count": {
+        "view": 0,
+        "use": 7275,
+        "atten": 544
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 1214016,
+      "tag_name": "单机联机",
+      "cover": "",
+      "head_cover": "",
+      "content": "",
+      "short_content": "",
+      "type": 0,
+      "state": 0,
+      "ctime": 1436866637,
+      "count": {
+        "view": 0,
+        "use": 1258345,
+        "atten": 10413
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 2034846,
+      "tag_name": "刀剑神域第三季",
+      "cover": "",
+      "head_cover": "",
+      "content": "",
+      "short_content": "",
+      "type": 0,
+      "state": 0,
+      "ctime": 1469602685,
+      "count": {
+        "view": 0,
+        "use": 1473,
+        "atten": 841
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    },
+    {
+      "tag_id": 2529172,
+      "tag_name": "Noble团队",
+      "cover": "",
+      "head_cover": "",
+      "content": "",
+      "short_content": "",
+      "type": 0,
+      "state": 0,
+      "ctime": 1471707727,
+      "count": {
+        "view": 0,
+        "use": 49,
+        "atten": 51
+      },
+      "is_atten": 0,
+      "likes": 0,
+      "hates": 0,
+      "attribute": 0,
+      "liked": 0,
+      "hated": 0,
+      "showDetail": false,
+      "showReport": false,
+      "timeOut": null
+    }
+  ],
+  "comment": {
+    "count": 1568,
+    "list": [
+      "大家新年好啊！\n这里是村庄，村镇，城镇各个阶段演变建筑的作者（大绿葱）\n根据图片并不是很还原，第一个村庄最后也没有仔细观察少了一个阶段，不过还是用心做了，希望大家多多点赞收藏投币叭（突然不要脸233333）",
+      "1、缺少四周的RGB分离\n2、较多场景的修饰图形的缺失\n3、00:43的背景棺材缺少纹理\n4、00:46的方块没有使用动态模糊\n5、00:49的图片和墙面桌面是在一个图层，并且光源太近\n6、很多场景都有景深不足的情况\n希望Noble团队能注意一下细节，会对作品有很大改善",
+      "来了老哥！[小电视_我好兴奋]"
+    ]
+  },
+  "related": [
+    {
+      "aid": 42576019,
+      "cid": 74700788,
+      "duration": 41,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F02f34b98e9c8359d7475554d3420428b6f7f0809.jpg",
+      "title": "【刀剑神域】成功暂停到著名表情包出处，笑死我了",
+      "owner": {
+        "name": "白冴yyy",
+        "mid": 60751895
+      },
+      "stat": {
+        "danmaku": 171,
+        "view": 127911
+      }
+    },
+    {
+      "aid": 42613003,
+      "cid": 74759703,
+      "duration": 297,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002Fdbea51ca99d204480510b71328f1f83f6b636039.jpg",
+      "title": "桐人：整合骑士也坐公交车鸭 |ﾟДﾟ)))           #肥宅快乐沙雕图第十五（｡ò ∀ ó｡）#",
+      "owner": {
+        "name": "简简单单做坏蛋",
+        "mid": 59428434
+      },
+      "stat": {
+        "danmaku": 3691,
+        "view": 48998
+      }
+    },
+    {
+      "aid": 43228331,
+      "cid": 75786973,
+      "duration": 26,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F5d5de0fe4287957458af9162d0a009a02b2aec15.jpg",
+      "title": "MCBE自动转向双向飞行器\u002Fself returning 2-way flying machine in MCBE",
+      "owner": {
+        "name": "WavePlayz",
+        "mid": 320698626
+      },
+      "stat": {
+        "danmaku": 1,
+        "view": 794
+      }
+    },
+    {
+      "aid": 41947018,
+      "cid": 73649620,
+      "duration": 590,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F0552320145f47a8608add0f3ea36bc262afb289b.png",
+      "title": "【GTA5】哪种武器能最快射穿300片玻璃?",
+      "owner": {
+        "name": "Super泰官方频道",
+        "mid": 398135276
+      },
+      "stat": {
+        "danmaku": 994,
+        "view": 132575
+      }
+    },
+    {
+      "aid": 34681126,
+      "cid": 60759222,
+      "duration": 295,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002Favsas_i181027ws3sgly9szswmck2pr5ebl8c9_0027.jpg",
+      "title": "国服究竟有多少安全黑客？超级战墙黑客锦集 - Rases",
+      "owner": {
+        "name": "Rases",
+        "mid": 23427917
+      },
+      "stat": {
+        "danmaku": 126,
+        "view": 18085
+      }
+    },
+    {
+      "aid": 41713572,
+      "cid": 73243600,
+      "duration": 222,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F1b3dbd31d2f6595acd71a6b17cd3bff61185a735.jpg",
+      "title": "【造桥鬼才】第七期：这个就是活塞运动吗？",
+      "owner": {
+        "name": "林嘉驹",
+        "mid": 5774538
+      },
+      "stat": {
+        "danmaku": 3142,
+        "view": 864079
+      }
+    },
+    {
+      "aid": 43183326,
+      "cid": 75710144,
+      "duration": 299,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002Fb8a640aa2e83e09d42c57d85f3887f9ffa5dac1d.jpg",
+      "title": "籽岷被我的世界熊孩子玩了",
+      "owner": {
+        "name": "籽岷",
+        "mid": 686127
+      },
+      "stat": {
+        "danmaku": 601,
+        "view": 87217
+      }
+    },
+    {
+      "aid": 43076229,
+      "cid": 75527978,
+      "duration": 188,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F0738aa87e6883ad7ad9c8201b57c27027f6586a6.jpg",
+      "title": "此视频献给在深夜路灯熄灭还未睡去的你....",
+      "owner": {
+        "name": "不知名的熟频",
+        "mid": 109144126
+      },
+      "stat": {
+        "danmaku": 6,
+        "view": 530
+      }
+    },
+    {
+      "aid": 43094135,
+      "cid": 75558004,
+      "duration": 1375,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F83ea20b72f58554c8a1e04b1b044c7a7b9a9cd43.jpg",
+      "title": "MC原版生存玩家所接触不到的操作，你知道吗？Ep.7",
+      "owner": {
+        "name": "马里奥红叔",
+        "mid": 680447
+      },
+      "stat": {
+        "danmaku": 2429,
+        "view": 154581
+      }
+    },
+    {
+      "aid": 39327219,
+      "cid": 69141088,
+      "duration": 920,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002Fd8b05fc96940243efcdbd660858a0c59ceaa88ec.png",
+      "title": "【字幕】后段sao圣诞特典 日高小手手拍松冈；日高深井冰",
+      "owner": {
+        "name": "新たな紙",
+        "mid": 10429213
+      },
+      "stat": {
+        "danmaku": 181,
+        "view": 23809
+      }
+    },
+    {
+      "aid": 40101740,
+      "cid": 70430668,
+      "duration": 84,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F71a895aa21392e3370c9c9b4a6bc06b70f5e832a.jpg",
+      "title": "[DoMcer] 史上最短的宣传片",
+      "owner": {
+        "name": "夏希与一生一世",
+        "mid": 248579448
+      },
+      "stat": {
+        "danmaku": 4,
+        "view": 5090
+      }
+    },
+    {
+      "aid": 43243497,
+      "cid": 75811281,
+      "duration": 150,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F5c53e8346266223213994d8a74950d86184cfa2d.jpg",
+      "title": "【BesiegeX流浪地球】小破车和外骨骼，搞起！",
+      "owner": {
+        "name": "IOP的咖喱棒",
+        "mid": 4716152
+      },
+      "stat": {
+        "danmaku": 195,
+        "view": 30761
+      }
+    },
+    {
+      "aid": 35223194,
+      "cid": 61708894,
+      "duration": 68,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F14070bcbd77a4d4f68894871f22e0dc8cfb359be.jpg",
+      "title": "MC逮虾户",
+      "owner": {
+        "name": "Noble团队",
+        "mid": 1742626
+      },
+      "stat": {
+        "danmaku": 363,
+        "view": 49718
+      }
+    },
+    {
+      "aid": 43138393,
+      "cid": 75633588,
+      "duration": 1670,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F63ac86f18b82f6058141d8456cd7acf2b4cbfef7.jpg",
+      "title": "我的世界海岛生存第2期：骷髅岛下的史莱姆农场",
+      "owner": {
+        "name": "火龙小草",
+        "mid": 52778155
+      },
+      "stat": {
+        "danmaku": 2107,
+        "view": 67167
+      }
+    },
+    {
+      "aid": 43227556,
+      "cid": 75784519,
+      "duration": 851,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F20eb402c765b90132da331d5b40f0fa6472f2930.jpg",
+      "title": "忘记了合成表的史蒂夫#04：从头开始 from the ground up",
+      "owner": {
+        "name": "钨冬Jim",
+        "mid": 25974255
+      },
+      "stat": {
+        "danmaku": 931,
+        "view": 37750
+      }
+    },
+    {
+      "aid": 43193119,
+      "cid": 75723715,
+      "duration": 321,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F7f5846769092d406b6104ef68591de9b9526ecd6.jpg",
+      "title": "我的世界：MC四大神器大战哥斯拉模组，这些BOSS无限手套都失效了",
+      "owner": {
+        "name": "老虎解说",
+        "mid": 384570004
+      },
+      "stat": {
+        "danmaku": 98,
+        "view": 23148
+      }
+    },
+    {
+      "aid": 39311557,
+      "cid": 69082786,
+      "duration": 214,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F594ea091a853984b552f33fbe0560972a19ec2de.jpg",
+      "title": "刀剑神域第一季\u002F桐人自曝封弊者+片尾曲",
+      "owner": {
+        "name": "刀剑神域one",
+        "mid": 30597072
+      },
+      "stat": {
+        "danmaku": 10,
+        "view": 3439
+      }
+    },
+    {
+      "aid": 43249938,
+      "cid": 75820672,
+      "duration": 443,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F9a608fe9ad5887a649140e62274fca33c2b6b263.jpg",
+      "title": "沙雕赛马升级版本有毒2.0 小心慎点！注意安全",
+      "owner": {
+        "name": "弄到嘴",
+        "mid": 27890418
+      },
+      "stat": {
+        "danmaku": 1377,
+        "view": 325390
+      }
+    },
+    {
+      "aid": 43153325,
+      "cid": 75658123,
+      "duration": 210,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002Fb67dc2da0351484ee51530ef489e300c545cf151.jpg",
+      "title": "★我的世界★用我的世界来还原盾之勇者的盾",
+      "owner": {
+        "name": "东暮二狗",
+        "mid": 101315824
+      },
+      "stat": {
+        "danmaku": 4,
+        "view": 2813
+      }
+    },
+    {
+      "aid": 43241853,
+      "cid": 75809034,
+      "duration": 236,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002Fbf85c399948f73cbd04421e9e45843b01e64c44e.png",
+      "title": "起床战争萌新操作集锦",
+      "owner": {
+        "name": "あい御坂のNIMEI77",
+        "mid": 52630459
+      },
+      "stat": {
+        "danmaku": 2,
+        "view": 209
+      }
+    },
+    {
+      "aid": 26545286,
+      "cid": 45638320,
+      "duration": 814,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002Ffa8cb14f94061a36658612636cf2e6c3a27bde78.jpg",
+      "title": "【MC动画】《殖民·征途》第二集：两极分化",
+      "owner": {
+        "name": "Radiz_板蓝根",
+        "mid": 54951205
+      },
+      "stat": {
+        "danmaku": 262,
+        "view": 7473
+      }
+    },
+    {
+      "aid": 32027953,
+      "cid": 56018860,
+      "duration": 280,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F3f9ff86cb6f656b4160fdbd91f306f40047973dd.jpg",
+      "title": "【封面有毒】若排山倒海是自选卡关，那应该怎么过关？",
+      "owner": {
+        "name": "KallBet佬王",
+        "mid": 7331250
+      },
+      "stat": {
+        "danmaku": 1163,
+        "view": 334719
+      }
+    },
+    {
+      "aid": 42929146,
+      "cid": 75274277,
+      "duration": 3357,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F7f070b3e396cdb563a11195d420706c4baa937b1.jpg",
+      "title": "【刀剑神域】主题曲集合",
+      "owner": {
+        "name": "忆花梦落",
+        "mid": 172513587
+      },
+      "stat": {
+        "danmaku": 96,
+        "view": 2730
+      }
+    },
+    {
+      "aid": 41825592,
+      "cid": 73439938,
+      "duration": 268,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F632165024883abc4a7e98f5320fc2f01c62b8b45.jpg",
+      "title": "【刀剑神域】亚丝娜有五种造型，第二种很H",
+      "owner": {
+        "name": "妖孽大天使",
+        "mid": 205049253
+      },
+      "stat": {
+        "danmaku": 192,
+        "view": 21755
+      }
+    },
+    {
+      "aid": 38662679,
+      "cid": 67964681,
+      "duration": 823,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F79a39443e42d2386868d33989276bcd50e878e32.jpg",
+      "title": "【节选\u002F字幕】sao圣诞特典 松冈 为角色画衣服；看手办的パンツ",
+      "owner": {
+        "name": "新たな紙",
+        "mid": 10429213
+      },
+      "stat": {
+        "danmaku": 86,
+        "view": 12591
+      }
+    },
+    {
+      "aid": 43234481,
+      "cid": 75796604,
+      "duration": 320,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F83b45ec64b92413774ad92db9e9c4e2cd71d7b55.jpg",
+      "title": "【糖】蜘蛛特辑~超级战墙最后一期",
+      "owner": {
+        "name": "SimplerTang",
+        "mid": 178253462
+      },
+      "stat": {
+        "danmaku": 11,
+        "view": 957
+      }
+    },
+    {
+      "aid": 20386651,
+      "cid": 33316719,
+      "duration": 1534,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F6647c8d7930072a1f8bdcfe790c929b73b8b4422.jpg",
+      "title": "震惊！国人玩家【耗时4年】完成我的世界刀剑神域服务器",
+      "owner": {
+        "name": "超超超攻气的阿珉",
+        "mid": 56850351
+      },
+      "stat": {
+        "danmaku": 860,
+        "view": 218709
+      }
+    },
+    {
+      "aid": 43238897,
+      "cid": 75802776,
+      "duration": 208,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F469f64bfe4327c6a850f12890b71f88c70923a9d.jpg",
+      "title": "迷失森林15：野人也会打坐修仙？但他背后却藏了一具枯骨",
+      "owner": {
+        "name": "解说小怪兽",
+        "mid": 194566043
+      },
+      "stat": {
+        "danmaku": 258,
+        "view": 22245
+      }
+    },
+    {
+      "aid": 41825352,
+      "cid": 73439068,
+      "duration": 411,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002Ff737aad24f1fba313c125871750886191b615755.jpg",
+      "title": "存档会在我们离开游戏后做什么？",
+      "owner": {
+        "name": "毫无人性的大麦纸",
+        "mid": 591074
+      },
+      "stat": {
+        "danmaku": 3306,
+        "view": 421103
+      }
+    },
+    {
+      "aid": 43231762,
+      "cid": 75775292,
+      "duration": 492,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002Fd56127a556a7a0b52b4ec036ea7f67bb1a6bd6aa.jpg",
+      "title": "呜呜呜，这不是给人玩的游戏。",
+      "owner": {
+        "name": "大大期",
+        "mid": 19099574
+      },
+      "stat": {
+        "danmaku": 1268,
+        "view": 47885
+      }
+    },
+    {
+      "aid": 43198182,
+      "cid": 76030103,
+      "duration": 1924,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F219e30a837b431d7c83e78fd46bfb933962bde91.jpg",
+      "title": "2019MC拜年祭",
+      "owner": {
+        "name": "子沫视界工作室",
+        "mid": 366745208
+      },
+      "stat": {
+        "danmaku": 611,
+        "view": 48945
+      }
+    },
+    {
+      "aid": 43217585,
+      "cid": 75769304,
+      "duration": 106,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002Fe5ea37af432ed4953683376f0407da202265a92a.png",
+      "title": "贤 逼 人",
+      "owner": {
+        "name": "xpkkd幸鹏",
+        "mid": 225595835
+      },
+      "stat": {
+        "danmaku": 19,
+        "view": 2280
+      }
+    },
+    {
+      "aid": 43117504,
+      "cid": 75599387,
+      "duration": 209,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002Fc24b180c2928767a750b3bee18c78e86e0eee724.png",
+      "title": "【柒雨】这或许就是起床战争最悲惨不幸的死法吧（集锦）",
+      "owner": {
+        "name": "あい御坂のNIMEI77",
+        "mid": 52630459
+      },
+      "stat": {
+        "danmaku": 11,
+        "view": 1627
+      }
+    },
+    {
+      "aid": 43217083,
+      "cid": 75767266,
+      "duration": 764,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F74eef99ba5f109ac980e5c49c347bb30a8f806bc.jpg",
+      "title": "明月庄主我的世界BE红石日记加特林烟花",
+      "owner": {
+        "name": "明月庄主moon",
+        "mid": 2170934
+      },
+      "stat": {
+        "danmaku": 333,
+        "view": 19946
+      }
+    },
+    {
+      "aid": 43122117,
+      "cid": 75606109,
+      "duration": 219,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F0706e076e82beffcac6a13e625479fdff1a447ce.jpg",
+      "title": "【Steam上软件测试】玩一下SAO Utils",
+      "owner": {
+        "name": "默_箫",
+        "mid": 201314668
+      },
+      "stat": {
+        "danmaku": 17,
+        "view": 8665
+      }
+    },
+    {
+      "aid": 43230793,
+      "cid": 75788913,
+      "duration": 197,
+      "pic": "http:\u002F\u002Fi1.hdslb.com\u002Fbfs\u002Farchive\u002F58b841a5dbd4bf032d91805b2c23a1342f18034d.png",
+      "title": "『元气骑士』满配冷门武器，轻松捅爆精英祖蓝！",
+      "owner": {
+        "name": "嘤式分解_",
+        "mid": 28402950
+      },
+      "stat": {
+        "danmaku": 86,
+        "view": 5553
+      }
+    },
+    {
+      "aid": 43163162,
+      "cid": 75675170,
+      "duration": 98,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002Ff5d4ef31470b0add78714b87d3ef0e3729fa696b.jpg",
+      "title": "【红石音乐】藤原书记魔性舞 チカっとチカ千花っ♡ 辉夜大小姐想让我告白第三集ED",
+      "owner": {
+        "name": "某科学的绿冰块",
+        "mid": 17048798
+      },
+      "stat": {
+        "danmaku": 218,
+        "view": 63461
+      }
+    },
+    {
+      "aid": 43183060,
+      "cid": 75708364,
+      "duration": 1990,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F7129e70b1e3e6e3eca2a3dd5725397c4f12d49ec.jpg",
+      "title": "我被4年前的自己打败了？当你玩4年前自制图会发生什么？ 我的世界 Minecarft",
+      "owner": {
+        "name": "小墨boy",
+        "mid": 31923402
+      },
+      "stat": {
+        "danmaku": 2104,
+        "view": 97524
+      }
+    },
+    {
+      "aid": 43092092,
+      "cid": 75554643,
+      "duration": 421,
+      "pic": "http:\u002F\u002Fi0.hdslb.com\u002Fbfs\u002Farchive\u002F75826b264b764dab4aad78f4c80dd360d115bb75.jpg",
+      "title": "刀剑三中那些似曾相识的场景=￣ω￣=",
+      "owner": {
+        "name": "一只老年梦梦",
+        "mid": 6419297
+      },
+      "stat": {
+        "danmaku": 2423,
+        "view": 191940
+      }
+    },
+    {
+      "aid": 39692582,
+      "cid": 69797510,
+      "duration": 92,
+      "pic": "http:\u002F\u002Fi2.hdslb.com\u002Fbfs\u002Farchive\u002F6a348866e717bdbef4df539845df28fd083f76c7.jpg",
+      "title": "【刀剑神域】剪辑",
+      "owner": {
+        "name": "H天朝刁民H",
+        "mid": 23623073
+      },
+      "stat": {
+        "danmaku": 18,
+        "view": 5125
+      }
+    }
+  ],
+  "isClient": false,
+  "error": {},
+  "player": "",
+  "playurl": {},
+  "user": {},
+  "cidMap": {},
+  "insertScripts": [
+    "\u002F\u002Fs1.hdslb.com\u002Fbfs\u002Fstatic\u002Fjinkela\u002Fvideo\u002Fstardust-video.174fdd75743317f066b674615f125d276130e87c.js"
+  ]
+}

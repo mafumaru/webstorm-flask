@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/todolist/daily/parent/todolist_dir.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/todolist/daily/parent/todolist_dir.js"></script>
+{% endblock %}
+{% block body %}
+    <ul class="list-group">
+        {% for item in list_data %}
+            <li class="list-group-item">
+                <a href="/module/todolist/view/TodolistView/daily_todolist?parent_id={{ item.id }}" >{{ item.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

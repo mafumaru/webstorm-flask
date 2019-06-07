@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/todolist/daily/workflow/workflow.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/todolist/daily/workflow/workflow.js"></script>
+{% endblock %}
+{% block body %}
+{#    <button id="frequent" class="btn btn-danger btn-circle btn-lg"  style="right: 10px;bottom: 20px;position: fixed" ><span class="glyphicon glyphicon-plus" style="margin-top: 4.5px;margin-left: -0.5px"></span></button>#}
+    <div style="margin-left: 5px;margin-bottom: 10px">
+        <button id="clear_to_undo" class="btn btn-danger btn-circle btn-lg"><span class="glyphicon glyphicon-trash" style="margin-top: 4.5px;margin-left: -0.5px"></span></button>
+    </div>
+    <button id="exchange_workflow" class="btn btn-danger btn-circle btn-lg"  style="right: 10px;bottom: 70px;position: fixed" ><span class="glyphicon glyphicon-menu-up" style="margin-top: 4.5px;margin-left: -0.5px"></span></button>
+    <button id="workflow_done" class="btn btn-danger btn-circle btn-lg"  style="right: 10px;bottom: 15px;position: fixed" ><span class="glyphicon glyphicon-minus" style="margin-top: 4.5px;margin-left: -0.5px"></span></button>
+
+    <ul class="list-group" id="workflow_ul">
+        {% for item in list_data %}
+            <li class="list-group-item">
+                <label>
+                    <input type="radio" name="workflow_item"
+                           value="{{ item.id }}"> {{ item.content }}
+                </label>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

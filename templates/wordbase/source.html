@@ -1,0 +1,60 @@
+{% if list_item.wordbase_type == 'collection_type' %}
+    {% include list_item.collection_type | collection_item_filter %}
+{% elif list_item.wordbase_type == 'video' %}
+    <video controls class="wordbase_video_player">
+        <source src="/static/videos/{{ list_item.videoname }}.mp4" type="video/mp4">
+        <track src="/static/videos/{{ list_item.videoname }}.vtt" srclang="zh-cn" label="简体中文" kind="subtitles"
+               default>
+    </video>
+{% elif list_item.wordbase_type == 'wuxiaworld_chapter_p' %}
+    <h3>{{ list_item.novel_name }}</h3>
+    <h4>{{ list_item.chapter_name.en }} | {{ list_item.chapter_name.cn }}</h4>
+    <div class="chapter-text">
+        <p class="chapter-cn-p">{{ list_item.text.cn }}</p>
+        <p class="cross-p chapter-en-p">{{ list_item.text.en |safe }}</p>
+    </div>
+{% elif list_item.wordbase_type == 'wuxiaworld_chapter_comment' %}
+    <h3>{{ list_item.novel_name }}</h3>
+    <h4>{{ list_item.chapter_name.en }} | {{ list_item.chapter_name.cn }}</h4>
+    <div class="wuxiaworld-comment wordbase_container" style="min-height: 90px">
+        <div class="chapter-comment-avatar">
+            <img class="img-rounded img-responsive" width="79" height="79"
+                 src="{% if list_item.avatar == '/images/profile.png' %}https://www.wuxiaworld.com/images/profile.png{% else %}{{ list_item.avatar }}{% endif %}">
+        </div>
+        <div class="chapter-comment-info">
+            <div><b>{{ list_item.poster }}</b> <span>{{ list_item.timeCommented|int|strftime }}</span></div>
+            <p>{{ list_item.content |safe }}</p>
+            <div style="margin-top: 20px">
+                {%- for reply in list_item.children recursive %}
+                    <div class="wuxiaworld-comment" style="min-height: 55px">
+                        <div class="chapter-reply-avatar">
+                            <img class="img-rounded img-responsive" width="50" height="50"
+                                 src="{% if reply.avatar == '/images/profile.png' %}https://www.wuxiaworld.com/images/profile.png{% else %}{{ reply.avatar }}{% endif %}">
+                        </div>
+                        <div class="chapter-reply-info">
+                            <div><b>{{ reply.poster }}</b> <span>{{ reply.timeCommented|int|strftime }}</span>
+                            </div>
+                            <p class="reply_comment" data-id="{{ reply.id }}">{{ reply.content |safe }}</p>
+                            <div class="hidden-xs">
+                                {%- if reply.children -%}
+                                    {{ loop(reply.children) }}
+                                {%- endif %}
+                            </div>
+                        </div>
+                        <div class="visible-xs-block">
+                            {%- if reply.children -%}
+                                {% for i in range(reply.depth-2) %}&emsp;
+                                    &emsp;{% endfor %}<span class="glyphicon glyphicon-menu-down reply-sign"></span>
+                                <div style="display: none">
+                                    {{ loop(reply.children) }}
+                                    {% for i in range(reply.depth-2) %}&emsp;&emsp;{% endfor %}<span
+                                        class="glyphicon glyphicon-triangle-top reply-end-sign"></span>
+                                </div>
+                            {%- endif %}
+                        </div>
+                    </div>
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}

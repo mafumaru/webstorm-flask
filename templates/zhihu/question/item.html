@@ -1,0 +1,27 @@
+    <div class="author">
+            <div class="avatar_block"><a href="{{ list_item.author.url|replace("/api/v4", "") }}"><img class="avatar"
+                                                                                src="{{ list_item.author.avatar_url_template|replace("{size}","xs") }}"></a>
+            </div>
+            <div class="author_block">
+                <a href="{{ list_item.author.url |replace("/api/v4", "")}}" class="author"><b>{{ list_item.author.name }}</b></a>
+                <div class="author-headline">{{ list_item.author.headline }}</div>
+            </div>
+    </div>
+    <div class="voted"><a href="https://zhihu.com/question/{{ list_item.question.id }}/answer/{{ list_item.id }}">{{ list_item.voteup_count }} 人赞同了该回答</a></div>
+    <div class="main-content">
+        <div class="row">
+            {% if list_item.thumbnail %}
+                <div class="col-sm-4 hidden-xs">
+                    <img class="item" src="{{ list_item.thumbnail|replace("200x112", "400x224") }}">
+                </div>
+            {% endif %}
+            <div class="{% if list_item.thumbnail %}{{ "col-sm-8" }}{% else %}{{ "col-sm-12" }}{% endif %}">
+                <div class="text-content">{{ list_item.excerpt|safe }}<a href="#">阅读全文</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail-content">
+        {{ list_item.content |clear_zhihu_answer|safe }}
+    </div>
+    {% include 'zhihu/share/bar.html' %}

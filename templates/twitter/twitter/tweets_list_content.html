@@ -1,0 +1,6 @@
+{% extends 'includes/list_content.html' %}
+{% block list_item %}
+    <li class="list-group-item list_item" id="{{ list_item.id }}">
+    {% include 'twitter/twitter/item.html' %}
+    </li>
+{% endblock %}

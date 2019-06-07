@@ -1,0 +1,17 @@
+{% extends 'includes/list_content.html' %}
+{% block list_item %}
+    {% if list_item.type == 'common_card' %}
+        <li class="list-group-item list_item">
+            <h3 class="title_h3"><a
+                    href="{{ list_item.common_card.action.intent_url|zhihu_question_filter }}"
+                    class="title"><b>{{ list_item.common_card.feed_content.title.panel_text }}</b></a></h3>
+            <div class="main-content-copy">
+                <div class="row">
+                    <div class="text-content" style="padding: 5px;margin: 5px"><a
+                            href="{{ list_item.common_card.action.intent_url }}">{{ list_item.common_card.feed_content.content.panel_text }}</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/wuxiaworld/comment.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/wuxiaworld/comment.js"></script>
+{% endblock %}
+{% block body %}
+    <div style="margin: 10px">
+        <div class="comment-header" style="position: fixed;top: 50px;background-color:#fff;z-index: 200;">
+            <h3 class="center-block">{{ chapter_name.en }} | {{ chapter_name.cn }}</h3>
+            <h4>共 {{ total }} 条评论</h4>
+        </div>
+        <div class="comment-list" style="margin-top: 120px;padding-bottom: 50px">
+            {% for item in comments %}
+{#            {% if item.content|length>30 and not 'Thanks' in item.content %}#}
+            {% if (not 'thank' in item.content and not 'Thank' in item.content  and not 'Thx' in item.content  and not 'thx' in item.content) or item.content|length>200 %}
+                <div class="wuxiaworld-comment wordbase_container" style="min-height: 90px" data-novel="{{ novel }}"
+                 data-id="{{ item.id }}" data-chapter_id="{{ chapter_id }}" data-page="{{ page }}">
+                <div class="chapter-comment-avatar">
+                    <img class="img-rounded img-responsive" width="79" height="79"
+                         src="{% if item.avatar == '/images/profile.png' %}https://www.wuxiaworld.com/images/profile.png{% else %}{{ item.avatar }}{% endif %}">
+                </div>
+                <div class="chapter-comment-info">
+                    <div><b>{{ item.poster }}</b> <span>{{ item.timeCommented|int|strftime }}</span></div>
+                    <p>{{ item.content }}</p>
+                    <div style="margin-top: 20px">
+                        {%- for reply in item.children recursive %}
+                            <div class="wuxiaworld-comment" style="min-height: 55px">
+                                <div class="chapter-reply-avatar">
+                                    <img class="img-rounded img-responsive" width="50" height="50"
+                                         src="{% if reply.avatar == '/images/profile.png' %}https://www.wuxiaworld.com/images/profile.png{% else %}{{ reply.avatar }}{% endif %}">
+                                </div>
+                                <div class="chapter-reply-info">
+                                    <div><b>{{ reply.poster }}</b> <span>{{ reply.timeCommented|int|strftime }}</span>
+                                    </div>
+                                    <p class="reply_comment" data-id="{{ reply.id }}">{{ reply.content }}</p>
+                                    <div class="hidden-xs">
+                                        {%- if reply.children -%}
+                                            {{ loop(reply.children) }}
+                                        {%- endif %}
+                                    </div>
+                                </div>
+                                <div class="visible-xs-block">
+                                    {%- if reply.children -%}
+                                        {% for i in range(reply.depth-2) %}&emsp;&emsp;{% endfor %}<span class="glyphicon glyphicon-menu-down reply-sign"></span>
+                                        <div style="display: none">
+                                            {{ loop(reply.children) }}
+                                        {% for i in range(reply.depth-2) %}&emsp;&emsp;{% endfor %}<span class="glyphicon glyphicon-triangle-top reply-end-sign"></span>
+                                        </div>
+                                    {%- endif %}
+                                </div>
+                            </div>
+                        {%- endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        <nav style="left: 0;right:0;bottom: 36px;position: fixed;margin: 0 auto">
+            <ul class="pager">
+                <li>
+                    <a href="/module/wuxiaworld/view/CommentView/render?novel={{ novel }}&chapter_id={{ chapter_id }}&page={{ prev }}">Previous</a>
+                </li>
+                <li>
+                    <a href="/module/wuxiaworld/view/CommentView/render?novel={{ novel }}&chapter_id={{ chapter_id }}&page={{ next }}">Next</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+{% endblock %}

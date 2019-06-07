@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/wordbase/chinese.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/wordbase/chinese.js"></script>
+{% endblock %}
+{% block body %}
+    <div class="col-md-1">
+        <a href="/module/wordbase/view/ChineseView/render?table_name=foreign" class="btn btn-danger btn-circle btn-lg">F</a>
+    </div>
+    <ul class="list-group list col-md-11">
+        {% include 'wordbase/chinese_list_content.html' %}
+    </ul>
+{% endblock %}

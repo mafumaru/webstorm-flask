@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/module/tieba/tie/tie.css">
+{% endblock %}
+{% block js %}
+    <script src="/static/module/tieba/tie/tie.js"></script>
+{% endblock %}
+{% block body %}
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8">
+
+            <ul class="list-group list">
+                {% include 'tieba/tie/tie_list_content.html' %}
+            </ul>
+        </div>
+        <div class="col-sm-3">
+        </div>
+{% endblock %}
